@@ -1,5 +1,5 @@
-API: How To
-===========
+Table of Contents
+=================
 
 Developers! Want to embed codeREADr into your own application? Use our API to integrate our functionality into your software. Make sure to read this document before you get started. 
 

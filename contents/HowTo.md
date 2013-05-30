@@ -1,3 +1,7 @@
+[Finding Your API Key](#finding)
+[Submitting Variables](#submitting)
+
+<a id="finding"></a>
 Finding Your API Key
 ====================
 
@@ -5,6 +9,7 @@ A valid API key is required for any site functions performed through our API. To
 
 ![API Key Location](https://www.codereadr.com/kb/images/apikey_normal.png)
 
+<a id="submitting"></a>
 Submitting Variables
 ====================
 
