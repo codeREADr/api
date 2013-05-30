@@ -1,4 +1,4 @@
-API: How To
+<font size="20">API: How To</font>
 
 Developers! Want to embed codeREADr into your own application? Use our API to integrate our functionality into your software. Make sure to read this document before you get started. 
 
