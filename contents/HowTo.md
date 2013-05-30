@@ -1,5 +1,5 @@
-[Finding Your API Key](#finding)<br>
-[Submitting Variables](#submitting)
+<a href="#finding">Finding Your API Key</a><br>
+<a href="#submitting">Submitting Variables</a>
 
 <h1 id="finding">Finding Your API Key</h1>
 
