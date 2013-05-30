@@ -24,7 +24,7 @@ Note: If required, with DSU you will have to create your own history URL for in-
 | udid | The unique device ID of the scanner. |
 | userid | The numeric ID of the user who performed the scan. |
 | questions | An array of question texts with numeric question IDs as indices. This variable is only sent if the service contains data collection questions. |
-| answers | An array of corresponding answers with numeric question IDs as indices. This variable is only sent if service contains data collection questions. In case of multiple answers given, they are separated by a delimiter, which is (^), so you can split by it. |
+| answers | An array of corresponding answers with numeric question IDs as indices. This variable is only sent if service contains data collection questions. In case of multiple answers given, they are separated by a delimiter, which is |^|, so you can split by it. |
 
 These variables are sent via HTTP POST with every scan. Grabbing these results may vary from language to language, so we suggest looking up how to capture POST variables if you do not know how to do so.
 
