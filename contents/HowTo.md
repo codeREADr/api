@@ -1,3 +1,5 @@
+<h1>Table of Contents</h1>
+
 * <a href="#finding">Finding Your API Key</a><br>
 * <a href="#submitting">Submitting Variables</a>
 
