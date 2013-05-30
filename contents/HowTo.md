@@ -1,17 +1,19 @@
 [Finding Your API Key](#finding)
 [Submitting Variables](#submitting)
 
-<a id="finding"></a>
+<h1 id="finding">
 Finding Your API Key
 ====================
+</h1>
 
 A valid API key is required for any site functions performed through our API. To locate your API key, sign into codeREADr.com or create an account. Once authenticated, click the “Preferences” link in the site header. Your API key is located in the Admin Settings section.
 
 ![API Key Location](https://www.codereadr.com/kb/images/apikey_normal.png)
 
-<a id="submitting"></a>
+<h1 id="submitting">
 Submitting Variables
 ====================
+</h1>
 
 The codeREADr API is located at:
 
