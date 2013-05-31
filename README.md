@@ -1,22 +1,20 @@
-Table of Contents
-=================
+<h1>Overview</h1>
 
 Developers! Want to embed codeREADr into your own application? Use our API to integrate our functionality into your software. Make sure to read this document before you get started. 
 
 Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
 * <a href="#api">API Table of Contents</a><br>
-
 * <a href="#finding">Finding Your API Key</a><br>
 * <a href="#submitting">Submitting Variables</a>
 
-<a name="finding"></a><h1>Finding Your API Key</h1>
+<a name="finding"></a><h2>Finding Your API Key</h2>
 
 A valid API key is required for any site functions performed through our API. To locate your API key, sign into codeREADr.com or create an account. Once authenticated, click the “Preferences” link in the site header. Your API key is located in the Admin Settings section.
 
 ![API Key Location](https://www.codereadr.com/kb/images/apikey_normal.png)
 
-<a name="submitting"></a><h1>Submitting Variables</h1>
+<a name="submitting"></a><h2>Submitting Variables</h2>
 
 The codeREADr API is located at:
 
@@ -39,7 +37,7 @@ The easiest and most direct method. Just attach variables to the URL.
 Example:
 
 ```
-https://api.codereadr.com/api/?section=(SECTION_VARIABLE)&api_key=(YOUR_API_KEY)&action=(ACTION_VARIABLE)
+https://api.codereadr.com/api/?section=SECTION_VARIABLE&api_key=YOUR_API_KEY&action=ACTION_VARIABLE
 ```
 
 * POST
@@ -51,9 +49,9 @@ Example:
 ```html
 <html>
     <form method="POST" action="https://api.codereadr.com/api/">
-        <input type="text" name="api_key" value="(YOUR_API_KEY)"/>
-        <input type="text" name="section" value="(SECTION_VARIABLE)"/>
-        <input type="text" name="action" value="(ACTION_VARIABLE)"/>
+        <input type="text" name="api_key" value="YOUR_API_KEY"/>
+        <input type="text" name="section" value="SECTION_VARIABLE"/>
+        <input type="text" name="action" value="ACTION_VARIABLE"/>
         <input type="submit"/>
     </form>
 </html>
@@ -67,9 +65,9 @@ Example:
 
 ```xml
 <xml>
-    <section>(SECTION_VARIABLE)</section>
-    <action>(ACTION_VARIABLE)</action>
-    <api_key>(YOUR_API_KEY)</api_key>
+    <section>SECTION_VARIABLE</section>
+    <action>ACTION_VARIABLE</action>
+    <api_key>YOUR_API_KEY</api_key>
 </xml>
 ```
 
@@ -81,16 +79,15 @@ Example:
 
 ```xml
 <xml>
-    <section >(SECTION_VARIABLE)</section>
-    <action>(ACTION_VARIABLE)</action>
-    <api_key>(YOUR_API_KEY)</api_key>
+    <section>SECTION_VARIABLE</section>
+    <action>ACTION_VARIABLE</action>
+    <api_key>YOUR_API_KEY</api_key>
 </xml>
 ```
 
 After the API receives the request, it responds with raw XML containing either a success status and requested information, or a failure status and an error description.
 
 <a name="api"></a><h1>Table of Contents</h1>
-* [API: How To](contents/HowTo.md)
 * [Postback + Direct Scan to URL (DSU)](contents/Postback.md)
 * [API: Servcies](contents/Services.md)
 * [API: Users](contents/Users.md)
