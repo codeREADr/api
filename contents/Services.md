@@ -2,7 +2,7 @@
 
 Make sure to read the API Introduction before this document.
 
-<a href="retrieve"></a><h2>Retrieving A Service List</h2>
+<a name="retrieve"></a><h2>Retrieving A Service List</h2>
 
 <h3>Required Variables</h3>
 
@@ -45,7 +45,7 @@ Example :
 </xml>
 ```
 
-<a href="create"></a><h2>Creating a Service</h2>
+<a name="create"></a><h2>Creating a Service</h2>
 <a href="#head">Back to top</a>
 
 <h3>Required Variables</h3>
