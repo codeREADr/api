@@ -53,12 +53,20 @@ Example :
 * <b>action</b> must be set to <b>create</b> .
 * <b>api_key</b> must be set to [your unique API key] [1] .
 * validation_method - an enum type that specifies the service type you desire for your new service. You must set it to one of these options:
-        record (Record Scans Online)
-        ondevicerecord (Record Scans On-Device)
-        database (Validate Scans Online)
-        ondevicedatabase (Validate Scans On-Device)
-        postback (Postback URL)
+    * <b>record</b> (Record Scans Online)
+    * <b>ondevicerecord</b> (Record Scans On-Device)
+    * <b>database</b> (Validate Scans Online)
+    * <b>ondevicedatabase</b> (Validate Scans On-Device)
+    * <b>postback</b> ([Postback URL](Postback.md#head))
 
-If validation_method is set to database or ondevicedatabase :
+If <b>validation_method</b> is set to <b>database</b> or <b>ondevicedatabase</b> :
+
+    <b>database_id</b> - a string which must be included and set to the ID of the database the scans will be validated against.
+
+If <b>validation_method</b> is set to <b>postback</b> :
+
+    <b>postback_url</b> - a string which must be included and set to the destination URL where all scans will be forwarded to. (More info.)
+
+<h3>Optional Variables</h3>
 
 [1]:../README.md#finding
