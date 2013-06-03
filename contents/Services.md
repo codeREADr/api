@@ -61,11 +61,11 @@ Example :
 
 If <b>validation_method</b> is set to <b>database</b> or <b>ondevicedatabase</b> :
 
-    <b>database_id</b> - a string which must be included and set to the ID of the database the scans will be validated against.
+* <b>database_id</b> - a string which must be included and set to the ID of the database the scans will be validated against.
 
 If <b>validation_method</b> is set to <b>postback</b> :
 
-    <b>postback_url</b> - a string which must be included and set to the destination URL where all scans will be forwarded to. (More info.)
+* <b>postback_url</b> - a string which must be included and set to the destination URL where all scans will be forwarded to. (More info.)
 
 <h3>Optional Variables</h3>
 
