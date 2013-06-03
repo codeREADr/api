@@ -31,14 +31,14 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 * [API: Error Codes](contents/ErrorCodes.md)
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
-<a href="#head">Back to Top</a>
 
 A valid API key is required for any site functions performed through our API. To locate your API key, sign into codeREADr.com or create an account. Once authenticated, click the “Preferences” link in the site header. Your API key is located in the Admin Settings section.
 
 ![API Key Location](https://www.codereadr.com/kb/images/apikey_normal.png)
 
-<a name="submitting"></a><h2>Submitting Variables</h2>
 <a href="#head">Back to Top</a>
+
+<a name="submitting"></a><h2>Submitting Variables</h2>
 
 The codeREADr API is located at:
 
@@ -111,5 +111,6 @@ Example:
 
 After the API receives the request, it responds with raw XML containing either a success status and requested information, or a failure status and an error description.
 
+<a href="#head">Back to Top</a>
 
 [1]: https://www.codereadr.com/kb/content/14/90/en/api-pricing-and-limits.html
