@@ -65,7 +65,7 @@ If <b>validation_method</b> is set to <b>database</b> or <b>ondevicedatabase</b>
 
 If <b>validation_method</b> is set to <b>postback</b> :
 
-* <b>postback_url</b> - a string which must be included and set to the destination URL where all scans will be forwarded to. (More info.)
+* <b>postback_url</b> - a string which must be included and set to the destination URL where all scans will be forwarded to. ([More info.](Postback.md#head))
 
 <h3>Optional Variables</h3>
 
