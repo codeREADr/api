@@ -61,4 +61,4 @@ Example :
 
 If validation_method is set to database or ondevicedatabase :
 
-[1] (../README.md#finding)
+[1]:../README.md#finding
