@@ -2,7 +2,7 @@
 
 Make sure to read the API Introduction before this document.
 
-<h2>Retrieving A Service List</h2>
+<a href="retrieve"></a><h2>Retrieving A Service List</h2>
 <a href="#head">Back to top</a>
 
 <h3>Required Variables</h3>
@@ -46,7 +46,7 @@ Example :
 </xml>
 ```
 
-<h2>Creating a Service</h2>
+<a href="create"></a><h2>Creating a Service</h2>
 <a href="#head">Back to top</a>
 
 <h3>Required Variables</h3>
@@ -99,7 +99,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Editing a Service</h2>
+<a name="edit"></a><h2>Editing a Service</h2>
 
 Variables omitted when editing a service will not affect their correspondent service settings.
 
@@ -141,7 +141,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Deleting a Service</h2>
+<a name="delete"></a><h2>Deleting a Service</h2>
 
 <h3>Required Variables</h3>
 
@@ -163,7 +163,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Authorizing / De-Authorizing Users For Services</h2>
+<a name="authorize"></a><h2>Authorizing / De-Authorizing Users For Services</h2>
 
 <h3>Required Variables</h3>
 
@@ -186,7 +186,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Adding / Removing Questions from a Service</h2>
+<a name="add"></a><h2>Adding / Removing Questions from a Service</h2>
 
 <h3>Required Variables</h3>
 
