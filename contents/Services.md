@@ -1,8 +1,9 @@
-<h1>API: Services</h1>
+<a name="head"></a><h1>API: Services</h1>
 
 Make sure to read the API Introduction before this document.
 
 <h2>Retrieving A Service List</h2>
+<a href="#head">Back to top</a>
 
 <h3>Required Variables</h3>
 
@@ -46,6 +47,7 @@ Example :
 ```
 
 <h2>Creating a Service</h2>
+<a href="#head">Back to top</a>
 
 <h3>Required Variables</h3>
 
