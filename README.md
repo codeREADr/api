@@ -6,10 +6,10 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
 
 <a name="toc"></a><h1>Table of Contents</h1>
+
 * Overview
     * Finding Your API Key
-    * Submitting Variables
-
+    * Submitting Variable
 * Postback + Direct Scan to URL (DSU)
     * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
     * [DSU Benefits](contents/Postback.md#benefits)
