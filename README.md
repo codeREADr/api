@@ -1,4 +1,4 @@
-<h1>Overview</h1>
+<a name="head"></a><h1>Overview</h1>
 
 Developers! Want to embed codeREADr into your own application? Use our API to integrate our functionality into your software. Make sure to read this document before you get started. 
 
@@ -24,12 +24,14 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 * [API: Error Codes](contents/ErrorCodes.md)
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
+<a href="#head">Back to Top</a>
 
 A valid API key is required for any site functions performed through our API. To locate your API key, sign into codeREADr.com or create an account. Once authenticated, click the “Preferences” link in the site header. Your API key is located in the Admin Settings section.
 
 ![API Key Location](https://www.codereadr.com/kb/images/apikey_normal.png)
 
 <a name="submitting"></a><h2>Submitting Variables</h2>
+<a href="#head">Back to Top</a>
 
 The codeREADr API is located at:
 
