@@ -71,4 +71,20 @@ If <b>validation_method</b> is set to <b>postback</b> :
 
 <h3>Optional Variables</h3>
 
+* <b>service_name</b> - a string which specifies the desired name of your new service. The default is "Service $i", where $i is the next available sequential number.
+* <b>description</b> - a string which specifies the desired description of your new service. Blank by default.
+* <b>duplicate_value</b> - an integer which specifies whether duplicate barcode values will returned as valid or invalid if <b>validation_method</b> is set to <b>database</b> or <b>ondevicedatabase</b> . Input "1" for valid and "0" for invalid. Default value is 1.
+* <b>period_start_date</b> - a string which specifies the date when the new service should become active. Can be formatted as MM/DD/YYYY or YYYY-MM-DD ( Examples : 12/20/2012 or 2012-12-20). If this parameter is not specified, the service is always active.
+* <b>period_start_time</b> - a string which specifies the time when the new service should become active. Can be formatted as hh:mm:ss or hh:mma ( Examples : 18:30:00 or 6:30pm). If this parameter is not specified, the service is activated at 12:00AM on the specified <b>period_start_date</b> .
+* <b>period_end_date</b> - a string which specifies the date when the new service should become inactive. Can be formatted as hh:mm:ss or hh:mma ( Examples : 12/20/2012 or 2012-12-20). If this parameter is not specified, the service is always active.
+* <b>period_end_time</b> - a string which specifies the time when the new service should become inactive. Can be formatted as hh:mm:ss or hh:mma ( Examples : 18:30:00 or 6:30pm). If this parameter is not specified, the service remains active until 11:59:59PM on the specified <b>period_end_date</b> .
+* <b>upload_email</b> - a string which specifies the email address the accountholder would like a CSV file of scan data automatically sent to after each upload. If this parameter is not specified, scan data is not emailed.
+* <b>upload_email_format</b> - a string which specifies the format of the CSV file to be emailed to the email address specified under <b>upload_email</b> . Possible values are "regular" (do not include scan properties information) and "properties" (includes scan properties). Default value is "regular".
+* <b>viewOtherScans</b> - a boolean value which specifies which scans an authorized user can view on their device. If set to 0, the user can only view their own scans. If set to 1, the user can view the scans of every user authorized for the service. This value is set to 1 by default.
+* <b>enable_direct_scan</b> - an integer which only needs to be specified if <b>validation_method</b> is set to postback. It specifies that the scans will not be routed through the codeREADr servers but instead go directly to your Postback URL server. Input "1" to enable and "0" to disable. Default value is 0.
+* <b>symbologies</b> - an array of numbers which specify the barcode symbologies. By selecting only those symbologies which your app users will scan, the scan process will be quicker and more accurate. See the available symbologies here and the corresponding numbers here.
+* <b>enableGPS</b> - a boolean value which makes the service submit GPS location with every scan as a scan property. If set to 1, location will be submitted. If set to 0, it will not be submitted. This value is set to 0 by default. ['Background GPS'.]
+
+
+
 [1]:../README.md#finding
