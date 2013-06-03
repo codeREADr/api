@@ -4,9 +4,21 @@ Developers! Want to embed codeREADr into your own application? Use our API to in
 
 Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
-* <a href="#api">API Table of Contents</a><br>
-* <a href="#finding">Finding Your API Key</a><br>
-* <a href="#submitting">Submitting Variables</a>
+
+<a name="api"></a><h1>Table of Contents</h1>
+* Overview
+    * <a href="#finding">Finding Your API Key</a><br>
+    * <a href="#submitting">Submitting Variables</a><br>
+* [Postback + Direct Scan to URL (DSU)](contents/Postback.md)
+    * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
+* [API: Servcies](contents/Services.md)
+* [API: Users](contents/Users.md)
+* [API: Devices](contents/Devices.md)
+* [API: Questions and Location Tracking](contents/Questions.md)
+* [API: Scans](contents/Scans.md)
+* [API: Uploads](contents/Uploads.md)
+* [API: Scan Properties](contents/ScanProperties.md)
+* [API: Error Codes](contents/ErrorCodes.md)
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
 
@@ -87,15 +99,5 @@ Example:
 
 After the API receives the request, it responds with raw XML containing either a success status and requested information, or a failure status and an error description.
 
-<a name="api"></a><h1>Table of Contents</h1>
-* [Postback + Direct Scan to URL (DSU)](contents/Postback.md)
-* [API: Servcies](contents/Services.md)
-* [API: Users](contents/Users.md)
-* [API: Devices](contents/Devices.md)
-* [API: Questions and Location Tracking](contents/Questions.md)
-* [API: Scans](contents/Scans.md)
-* [API: Uploads](contents/Uploads.md)
-* [API: Scan Properties](contents/ScanProperties.md)
-* [API: Error Codes](contents/ErrorCodes.md)
 
 [1]: https://www.codereadr.com/kb/content/14/90/en/api-pricing-and-limits.html
