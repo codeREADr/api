@@ -6,7 +6,7 @@ Postback URLs are used to relay data from codeREADr to the URL of your choice. T
 
 When using our default Postback URL service  type, data goes from the scanning device to codeREADr's servers and then gets relayed to your postback URL. This allows us to store the data for use with our managing features such as history review and filtered data exporting. Postback URL also offer the benefit of batch scan upload from the device in cases where internet connectivity is lost. However, we also provide an option to bypass our servers and scan directly to your URL - it's called Direct Scan to URL (DSU). 
 
-<a name="benefits"></a><h2>DSU Benefits:</h2>
+<a name="benefits"></a><h2>DSU Benefits</h2>
 
 * The app will POST scan data directly to your URL allowing you to keep your scan data completely contained within your organization.
 * You can use LAN (local area network) URLs as long as the device is also on that LAN.

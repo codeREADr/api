@@ -11,6 +11,9 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
     * <a href="#submitting">Submitting Variables</a><br>
 * [Postback + Direct Scan to URL (DSU)](contents/Postback.md)
     * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
+    * [DSU Benefits](contents/Postback.md#benefits)
+    * [Variables Posted To Your Server](contents/Postback.md#variables)
+    * [Your Response](contents/Postback.md#response)
 * [API: Servcies](contents/Services.md)
 * [API: Users](contents/Users.md)
 * [API: Devices](contents/Devices.md)
