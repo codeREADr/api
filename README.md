@@ -7,8 +7,11 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
 <a name="api"></a><h1>Table of Contents</h1>
 * Overview
+    <!--
     * <a href="#finding">Finding Your API Key</a><br>
     * <a href="#submitting">Submitting Variables</a><br>
+    -->
+    * [Finding Your API Key](#finding)
 * [Postback + Direct Scan to URL (DSU)](contents/Postback.md)
     * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
     * [DSU Benefits](contents/Postback.md#benefits)
