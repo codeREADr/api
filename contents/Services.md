@@ -3,7 +3,6 @@
 Make sure to read the API Introduction before this document.
 
 <a href="retrieve"></a><h2>Retrieving A Service List</h2>
-<a href="#head">Back to top</a>
 
 <h3>Required Variables</h3>
 
