@@ -99,7 +99,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Editing a Service<h2>
+<h2>Editing a Service</h2>
 
 Variables omitted when editing a service will not affect their correspondent service settings.
 
