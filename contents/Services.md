@@ -110,7 +110,7 @@ Variables omitted when editing a service will not affect their correspondent ser
 * api_key must be set to your unique API key .
 * service_id - an integer which specifies the particular service you'd like to update.
 
-Optional Variables
+<h3>Optional Variables</h3>
 
 * database_id - a string which only needs to be specified if validation_method is set to database or ondevicedatabase . This needs to be set to the ID of the database the scans will be validated against.
 * postback_url - a string which only needs to be specified if validation_method is set to postback . This needs to be set to the destination URL where all scans will be forwarded to. (More info.)
@@ -131,6 +131,83 @@ Optional Variables
 <h3>Response</h3>
 
 If your service is successfully edited after we receive these variables, we will respond with raw XML containing a status of 1.
+
+Example :
+
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+</xml>
+~~~
+
+<h2>Deleting a Service</h2>
+
+<h3>Required Variables</h3>
+
+* section must be set to services .
+* action must be set to delete .
+* api_key must be set to your unique API key .
+* service_id - an integer which specifies the particular service you'd like to delete. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword all to include all services.
+
+<h3>Response</h3>
+
+If your service is successfully deleted after we receive these variables, we will respond with raw XML containing a status of 1.
+
+Example :
+
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+</xml>
+~~~
+
+<h2>Authorizing / De-Authorizing Users For Services</h2>
+
+<h3>Required Variables</h3>
+
+* section must be set to services .
+* action must be set to adduserpermission or revokeuserpermission .
+* api_key must be set to your unique API key .
+* service_id - a string which specifies the particular services you'd like to authorize / de-authorize a user for. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword all to include all services.
+* user_id - a string which specifies the user IDs that you wish to authorize / de-authorize for the specified services. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword all to include all users.
+
+<h3>Response</h3>
+
+If your users are successfully authorized / de-authorized for the specified services after we receive these variables, we will respond with raw XML containing a status of 1.
+
+Example :
+
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+</xml>
+~~~
+
+<h2>Adding / Removing Questions from a Service</h2>
+
+<h3>Required Variables</h3>
+
+* section must be set to services .
+* action must be set to addquestion or removequestion .
+* api_key must be set to your unique API key .
+* service_id - a string which specifies the particular services you'd like to add / remove questions from. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword all to include all services.
+* question_id - a string which specifies the question IDs that you wish to add / remove from the specified services. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword all to include all questions.
+
+<h3>Optional Variables</h3>
+
+* condition - an enum type which specifies the condition on which the question will display. There are four possible values.
+    * pre_submit will display the question before the scan is submitted to the server.
+    * post_submit will display the question after the scan is submitted to the server.
+    * valid_scan will display the question after the scan is submitted to the server, but only if the scan is valid.
+    * invalid_scan will display the question after the scan is submitted to the server, but only if the scan is invalid.
+    * If the parameter is not specified, the default value is pre_submit .
+
+<h3>Response</h3>
+
+If your questions are successfully added / removed from the specified services after we receive these variables, we will respond with raw XML containing a status of 1.
 
 Example :
 
