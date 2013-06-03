@@ -5,16 +5,18 @@ Developers! Want to embed codeREADr into your own application? Use our API to in
 Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
 
-<a name="api"></a><h1>Table of Contents</h1>
+<a name="toc"></a><h1>Table of Contents</h1>
 * Overview
     * [Finding Your API Key](#finding)
     * [Submitting Variables](#submitting)
-* [Postback + Direct Scan to URL (DSU)](contents/Postback.md)
+* [Postback + Direct Scan to URL (DSU)](contents/Postback.md#head)
     * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
     * [DSU Benefits](contents/Postback.md#benefits)
     * [Variables Posted To Your Server](contents/Postback.md#variables)
     * [Your Response](contents/Postback.md#response)
-* [API: Servcies](contents/Services.md)
+* [API: Services](contents/Services.md#head)
+    * Retrieving a Service List
+        * [Required Variables](contents/Services.md#)
 * [API: Users](contents/Users.md)
 * [API: Devices](contents/Devices.md)
 * [API: Questions and Location Tracking](contents/Questions.md)
