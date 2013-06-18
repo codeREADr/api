@@ -48,3 +48,34 @@ Example :
 * <b>limit</b> - an integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default.
 
 <h3>Response</h3>
+
+If a new user is successfully created after we receive these variables, we will respond with raw XML containing a status of 1 and your new user's ID.
+
+Example :
+
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+    <id>1001</id>
+</xml>
+~~~
+
+<h2>Editing a User</h2>
+
+Variables omitted when editing a user will not affect the variable's correspondent user settings.
+
+<h3>Required Variables</h3>
+
+* <b>section</b> must be set to <b>users</b> .
+* <b>action</b> must be set to <b>update</b> .
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>user_id</b> - an integer which specifies the user ID you wish to edit.
+
+<h3>Optional Variables</h3>
+
+* <b>username</b> - a string which specifies what you'd like to rename the user. We will return an error code if the new username already exists in the system.
+* <b>password</b> - a string which specifies the new password for the user.
+ * <b>limit</b> - an integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default.
+
+
