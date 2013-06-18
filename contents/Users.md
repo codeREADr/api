@@ -76,6 +76,39 @@ Variables omitted when editing a user will not affect the variable's corresponde
 
 * <b>username</b> - a string which specifies what you'd like to rename the user. We will return an error code if the new username already exists in the system.
 * <b>password</b> - a string which specifies the new password for the user.
- * <b>limit</b> - an integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default.
+* <b>limit</b> - an integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default.
 
+<h3>Response</h3>
 
+If the user you specified is successfully edited after we receive these variables, we will respond with raw XML containing a status of 1.
+
+Example :
+
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+</xml>
+~~~
+
+<h2>Deleting a User</h2>
+
+<h3>Required Variables</h3>
+
+* <b>section</b> must be set to <b>users</b> .
+* <b>action</b> must be set to <b>delete</b> .
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>user_id</b> - an integer or set of integers which specify the user IDs you wish to delete. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to delete all users.
+
+<h3>Response</h3>
+
+If the users you specified are successfully deleted after we receive these variables, we will respond with raw XML containing a status of 1.
+
+Example :
+
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+</xml>
+~~~
