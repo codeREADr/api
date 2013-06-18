@@ -6,7 +6,7 @@
 
 * <b>section</b> must be set to <b>users</b> .
 * <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to your unique API <b>key</b> .
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
 
 <h3>Optional Variables</h3>
 
@@ -33,3 +33,18 @@ Example :
 </xml>
 ~~~
 
+<h2>Creating a User</h2>
+
+<h3>Required Variables</h3>
+
+* <b>section</b> must be set to <b>users</b> .
+* <b>action</b> must be set to <b>create</b> .
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>username</b> - a string which specifies the name of your new user. We will return an error code if the username already exists in the system.
+* <b>password</b> - a string which specifies the password of your new user.
+
+<h3>Optional Variables</h3>
+
+* <b>limit</b> - an integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default.
+
+<h3>Response</h3>
