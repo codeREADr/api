@@ -35,12 +35,12 @@
 * <b>showProperties</b> - a boolean which toggles showing scan properties in the returned XML. Set it to 1 to show properties. Default value is 0 (hide properties).
 * <b>includeProperty</b> - a string which takes a comma-separated list of property names. Only scans that contain these properties will be included in the result set of scans.
 * <b>excludeProperty</b> - a string which takes a comma-separated list of property names. Scans that contain any of these properties will be excluded from the result set of scans.
-* <b>with_property</b> - an array to perform an exact match search for a property value that is present in the scan. Array key stands for the property name, while array value stands for the property value. Example: with_property[mode]=auto&with_property[color]=blue
-* <b>without_property</b> - an array to perform an exact match search for a property value that is <i>not</i> present in the scan. Array key stands for the property name, while array value stands for the property value. Example: without_property[mode]=auto&without_property[color]=blue
-* <b>value</b> - a string to perform an exact match search against the scan value (tid). (Example: value=abc )
-* <b>valuelike</b> - a string to perform a partial match search against the scan value (tid). (Example: value=abc will match abc1 , 123abc , 123abc123 , etc)
-* <b>response</b> - a string to perform an exact match search against the scan response (result). (Example: response=abc )
-* <b>responselike</b> - a string to perform a partial match search against the scan response (result). (Example: responselike=abc will match values with responses abc1 , 123abc , 123abc123 , etc)
+* <b>with_property</b> - an array to perform an exact match search for a property value that is present in the scan. Array key stands for the property name, while array value stands for the property value. Example: <code>with_property[mode]=auto&with_property[color]=blue</code>
+* <b>without_property</b> - an array to perform an exact match search for a property value that is <i>not</i> present in the scan. Array key stands for the property name, while array value stands for the property value. Example: <code>without_property[mode]=auto&without_property[color]=blue</code>
+* <b>value</b> - a string to perform an exact match search against the scan value (tid). (Example: <code>value=abc</code> )
+* <b>valuelike</b> - a string to perform a partial match search against the scan value (tid). (Example: <code>value=abc</code> will match <code>abc1 , 123abc , 123abc123</code> , etc)
+* <b>response</b> - a string to perform an exact match search against the scan response (result). (Example: <code>response=abc</code> )
+* <b>responselike</b> - a string to perform a partial match search against the scan response (result). (Example: responselike=abc will match values with responses <code>abc1 , 123abc , 123abc123</code> , etc)
 
 <h2>Response</h2>
 
