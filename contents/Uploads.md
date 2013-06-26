@@ -14,7 +14,7 @@
 * <b>device_id</b> - an integer or series of integers which will return only scans conducted by the specifed devices. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all devices in your search. This parameter is set to <b>all</b> by default.
 * <b>user_id</b> - an integer or series of integers which will return only scans conducted by the specified users. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all users in your search. This parameter is set to <b>all</b> by default.
 * <b>limit</b> - an integer which limits the maximum number of results displayed within the list.
-* offset - an integer which offsets the results shown. Only valid if <b>limit</b> is provided. ( Example : a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan.)
+* <b>offset</b> - an integer which offsets the results shown. Only valid if <b>limit</b> is provided. ( Example : a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan.)
 
 <h3>Response
 
