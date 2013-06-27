@@ -1,6 +1,6 @@
-<h1>API: Users</h1>
+<a name="head"></a><h1>API: Users</h1>
 
-<h2>Retrieving a List of Users</h2>
+<a name="retrieve"></a><h2>Retrieving a List of Users</h2>
 
 <h3>Required Variables</h3>
 
@@ -33,7 +33,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Creating a User</h2>
+<a name="create"></a><h2>Creating a User</h2>
 
 <h3>Required Variables</h3>
 
@@ -61,7 +61,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Editing a User</h2>
+<a name="edit"></a><h2>Editing a User</h2>
 
 Variables omitted when editing a user will not affect the variable's correspondent user settings.
 
@@ -91,7 +91,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Deleting a User</h2>
+<a name="delete"></a><h2>Deleting a User</h2>
 
 <h3>Required Variables</h3>
 
