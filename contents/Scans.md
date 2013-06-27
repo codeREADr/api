@@ -1,12 +1,14 @@
-<h1>API: Scans</h1>
+<a name="head"></a><h1>API: Scans</h1>
 
-<h2>Required Variables</h2>
+<a name="retrieve"></a><h2>Retrieving a List of Scans / Searching Scans</h2>
+
+<h3>Required Variables</h3>
 
 * <b>section</b> must be set to <b>scans</b> .
 * <b>action</b> must be set to <b>retrieve</b> .
 * <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
 
-<h2>Optional Variables</h2>
+<h3>Optional Variables</h3>
 
 * <b>keyword</b> - a string which specifies a keyword with which to run a search query. Blank by default.
 * <b>service_id</b> - an integer or series of integers which specifies the particular services you'd like to search for scans within. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all services. This parameter is set to <b>all</b> by default.
@@ -42,7 +44,7 @@
 * <b>response</b> - a string to perform an exact match search against the scan response (result). (Example: <code>response=abc</code> )
 * <b>responselike</b> - a string to perform a partial match search against the scan response (result). (Example: responselike=abc will match values with responses <code>abc1</code> , <code>123abc</code> , <code>123abc123</code> , etc)
 
-<h2>Response</h2>
+<h3>Response</h3>
 
 After we receive these variables, we will respond with raw XML containing status and scan data.
 
@@ -95,7 +97,7 @@ Example:
 </xml>
 ~~~
 
-<h2>Deleting Scans</h2>
+<a name="delete"></a><h2>Deleting Scans</h2>
 
 <h3>Required Variables</h3>
 
