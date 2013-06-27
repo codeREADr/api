@@ -38,7 +38,7 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
     * [Deleting an Answer Option](contents/Questions.md#deleteanswer)
 * [API: Scans](contents/Scans.md#head)
     * [Retrieving a List of Scans / Searching Scans](contents/Scans.md#retrieve)
-    * [Deleting Scans](contents/Scans#delete)
+    * [Deleting Scans](contents/Scans.md#delete)
 * [API: Uploads](contents/Uploads.md)
 * [API: Scan Properties](contents/ScanProperties.md)
 * [API: Error Codes](contents/ErrorCodes.md)
