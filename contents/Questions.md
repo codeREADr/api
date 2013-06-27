@@ -1,6 +1,6 @@
-<h1>API: Questions and Location Tracking</h1>
+<a name="head"></a><h1>API: Questions and Location Tracking</h1>
 
-<h2>Retrieving A List of Questions</h2>
+<a name="retrieve"></a><h2>Retrieving A List of Questions</h2>
 
 <h3>Required Variables</h3>
 
@@ -28,7 +28,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Creating a Question</h2>
+<a name="create"></a><h2>Creating a Question</h2>
 
 <h3>Required Variables</h3>
 
@@ -61,7 +61,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Deleting a Question</h2>
+<a name="delete"></a><h2>Deleting a Question</h2>
 
 <h3>Required Variables</h3>
 
@@ -83,7 +83,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Adding an Answer Option</h2>
+<a name="add"></a><h2>Adding an Answer Option</h2>
 
 <h3>Required Variables</h3>
 
@@ -107,7 +107,7 @@ Example: :
 </xml>
 ~~~
 
-<h2>Deleting an Answer Option</h2>
+<a name="deleteanswer"></a><h2>Deleting an Answer Option</h2>
 
 <h3>Required Variables</h3>
 

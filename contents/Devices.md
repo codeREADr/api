@@ -1,6 +1,6 @@
-<h1>API: Devices</h1>
+<a name="head"></a><h1>API: Devices</h1>
 
-<h2>Retrieving a List of Devices</h2>
+<a name="retrieve"></a><h2>Retrieving a List of Devices</h2>
 
 <h3>Required Variables</h3>
 
@@ -30,7 +30,7 @@ Example :
 </xml>
 ~~~
 
-<h2>Editing a Device</h2>
+<a name="edit"></a><h2>Editing a Device</h2>
 
 <h3>Required Variables</h3>
 

@@ -104,9 +104,9 @@ Variables omitted when editing a service will not affect their correspondent ser
 
 <h3>Required Variables</h3>
 
-* section must be set to services .
-* action must be set to update .
-* api_key must be set to your unique API key .
+* <b>section</b> must be set to <b>services</b> .
+* <b>action</b> must be set to <b>update</b> .
+* <b>api_key</b> must be set to your unique API key .
 * service_id - an integer which specifies the particular service you'd like to update.
 
 <h3>Optional Variables</h3>
