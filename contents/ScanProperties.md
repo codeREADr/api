@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Scan Properties</h1>
 
-<a name="creating"></a><h2>Creating a Scan Property</h2>
+<a name="create"></a><h2>Creating a Scan Property</h2>
 
 <h3>Required Variables</h3>
 
@@ -24,7 +24,7 @@ Example:
 </xml>
 ~~~
 
-<a name="retrieving"></a><h2>Retrieving A Scan Property Value</h2>
+<a name="retrieve"></a><h2>Retrieving A Scan Property Value</h2>
 
 <h3>Required Variables</h3>
 
@@ -48,10 +48,10 @@ Example :
 </xml>
 ~~~
 
-<a name="updating"></a><h2>Updating a Scan Property</h2>
-Same as [Creating a Scan Property](#creating)
+<a name="update"></a><h2>Updating a Scan Property</h2>
+Same as [Creating a Scan Property](#create)
 
-<a name="deleting"></a><h2>Deleting a Scan Property</h2>
+<a name="delete"></a><h2>Deleting a Scan Property</h2>
 
 <h3>Required Variables</h3>
 

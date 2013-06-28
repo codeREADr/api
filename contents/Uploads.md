@@ -1,6 +1,6 @@
-<h1>API: Uploads</h1>
+<a name="head"></a><h1>API: Uploads</h1>
 
-<h2>Retrieving a List of Uploads</h2>
+<a name="retrieve"></a><h2>Retrieving a List of Uploads</h2>
 
 <h3>Required Variables</h3>
 

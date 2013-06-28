@@ -39,8 +39,13 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 * [API: Scans](contents/Scans.md#head)
     * [Retrieving a List of Scans / Searching Scans](contents/Scans.md#retrieve)
     * [Deleting Scans](contents/Scans.md#delete)
-* [API: Uploads](contents/Uploads.md)
-* [API: Scan Properties](contents/ScanProperties.md)
+* [API: Uploads](contents/Uploads.md#head)
+    * [Retrieving a List of Uploads](contents/Uploads.md#retrieve)
+* [API: Scan Properties](contents/ScanProperties.md#head)
+    * [Creating a Scan Property](contents/ScanProperties.md#create)
+    * [Retrieving a Scan Property Value](contents/ScanProperties.md#retrieve)
+    * [Updating a Scan Property](contents/ScanProperties.md#update)
+    * [Deleting a Scan Property](contents/ScanProperties.md#delete)
 * [API: Error Codes](contents/ErrorCodes.md)
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
