@@ -97,6 +97,8 @@ Example:
 </xml>
 ~~~
 
+[Back to Top](#head)
+
 <a name="delete"></a><h2>Deleting Scans</h2>
 
 <h3>Required Variables</h3>
@@ -118,3 +120,5 @@ Example:
     <status>1</status>
 </xml>
 ~~~
+
+[Back to Top](#head)

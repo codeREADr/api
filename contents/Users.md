@@ -33,6 +33,8 @@ Example :
 </xml>
 ~~~
 
+[Back to Top](#head)
+
 <a name="create"></a><h2>Creating a User</h2>
 
 <h3>Required Variables</h3>
@@ -60,6 +62,8 @@ Example :
     <id>1001</id>
 </xml>
 ~~~
+
+[Back to Top](#head)
 
 <a name="edit"></a><h2>Editing a User</h2>
 
@@ -91,6 +95,8 @@ Example :
 </xml>
 ~~~
 
+[Back to Top](#head)
+
 <a name="delete"></a><h2>Deleting a User</h2>
 
 <h3>Required Variables</h3>
@@ -112,3 +118,5 @@ Example :
     <status>1</status>
 </xml>
 ~~~
+
+[Back to Top](#head)
