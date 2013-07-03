@@ -28,6 +28,8 @@ Example :
 </xml>
 ~~~
 
+[Back to Top](#head)
+
 <a name="create"></a><h2>Creating a Question</h2>
 
 <h3>Required Variables</h3>
@@ -61,6 +63,8 @@ Example :
 </xml>
 ~~~
 
+[Back to Top](#head)
+
 <a name="delete"></a><h2>Deleting a Question</h2>
 
 <h3>Required Variables</h3>
@@ -82,6 +86,8 @@ Example :
     <status>1</status>
 </xml>
 ~~~
+
+[Back to Top](#head)
 
 <a name="add"></a><h2>Adding an Answer Option</h2>
 
@@ -106,6 +112,8 @@ Example: :
     <id>1</id>
 </xml>
 ~~~
+
+[Back to Top](#head)
 
 <a name="deleteanswer"></a><h2>Deleting an Answer Option</h2>
 
