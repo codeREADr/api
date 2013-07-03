@@ -5,6 +5,7 @@ Postback URLs are used to relay data from codeREADr to the URL of your choice. T
 <a name="default-direct"></a><h2>Default Postback URL vs. Direct Scan to URL (DSU)</h2>
 
 When using our default Postback URL service  type, data goes from the scanning device to codeREADr's servers and then gets relayed to your postback URL. This allows us to store the data for use with our managing features such as history review and filtered data exporting. Postback URL also offer the benefit of batch scan upload from the device in cases where internet connectivity is lost. However, we also provide an option to bypass our servers and scan directly to your URL - it's called Direct Scan to URL (DSU). 
+[Back to Top](#head)
 
 <a name="benefits"></a><h2>DSU Benefits</h2>
 
@@ -14,6 +15,8 @@ When using our default Postback URL service  type, data goes from the scanning d
 * All scan data remains completely private because it never comes to our servers.
 
 Note: If required, with DSU you will have to create your own history URL for in-app scan review and your own database look-up URL.
+
+[Back to Top](#head)
 
 <a name="variables"></a><h2>Variables Posted To Your Server</h2>
 
@@ -27,6 +30,8 @@ Note: If required, with DSU you will have to create your own history URL for in-
 | answers | An array of corresponding answers with numeric question IDs as indices. This variable is only sent if service contains data collection questions. In case of multiple answers given, they are separated by a delimiter, which is (^), so you can split by it. |
 
 These variables are sent via HTTP POST with every scan. Grabbing these results may vary from language to language, so we suggest looking up how to capture POST variables if you do not know how to do so.
+
+[Back to Top](#head)
 
 <a name="response"></a><h2>Your Response</h2>
 
@@ -70,3 +75,5 @@ All special XML entities must be encoded. If you see the message below, your res
 ```
 XML Parsing Error: not well-formed
 ```
+
+[Back to Top](#head)
