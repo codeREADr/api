@@ -30,7 +30,7 @@ Example :
 </xml>
 ~~~
 
-<a name="head">Back to Top</a>
+[Back to Top](#head)
 
 <a name="edit"></a><h2>Editing a Device</h2>
 
@@ -55,4 +55,4 @@ Example :
 </xml>
 ~~~
 
-<a name="head">Back to Top</a>
+[Back to Top](#head)
