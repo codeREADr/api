@@ -105,13 +105,13 @@ Build an XML file to post to https://api.codereadr.com/api/ . Only one file can 
 
 Example:
 
-```xml
+~~~ .xml
 <xml>
     <section>SECTION_VARIABLE</section>
     <action>ACTION_VARIABLE</action>
     <api_key>YOUR_API_KEY</api_key>
 </xml>
-```
+~~~
 
 * XML String
 
@@ -119,13 +119,13 @@ You can also build an XML string, assign it to the variable named xml and either
 
 Example:
 
-```xml
+~~~ .xml
 <xml>
     <section>SECTION_VARIABLE</section>
     <action>ACTION_VARIABLE</action>
     <api_key>YOUR_API_KEY</api_key>
 </xml>
-```
+~~~
 
 After the API receives the request, it responds with raw XML containing either a success status and requested information, or a failure status and an error description.
 

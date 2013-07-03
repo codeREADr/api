@@ -30,6 +30,8 @@ Example :
 </xml>
 ~~~
 
+<a name="head">Back to Top</a>
+
 <a name="edit"></a><h2>Editing a Device</h2>
 
 <h3>Required Variables</h3>
@@ -52,3 +54,5 @@ Example :
     <status>1</status>
 </xml>
 ~~~
+
+<a name="head">Back to Top</a>
