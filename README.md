@@ -2,4 +2,4 @@
 
 The following versions of the CodeREADr API are available
 
-[1.0](1.0/README.md#head)
+[Version 1.0](1.0/README.md#head)
