@@ -71,7 +71,7 @@ Example :
 
 * <b>section</b> must be set to <b>questions</b> .
 * <b>action</b> must be set to <b>delete</b> .
-* <b>api_key</b> must be set to (your unique API key)[../README.md#finding] .
+* <b>api_key</b> must be set to (your unique API key)(../README.md#finding) .
 * <b>question_id</b> - an integer or series of integers which specifies the question IDs that you wish to include in the list. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all questions.
 
 <h3>Response</h3>
@@ -96,8 +96,8 @@ Example :
 * <b>section</b> must be set to <b>questions</b> .
 * <b>action</b> must be set to <b>addanswer</b> .
 * <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
-* <b>question_id</b> - an integer which specifies the numeric question ID you want to add an answer to.
-* <b>answer_text</b> - a string which specifies the answer text you want to add to the question. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all answers.
+* <b>question_id</b> - an integer which specifies the numeric question ID you want to add an answer to. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all answers.
+* <b>answer_text</b> - a string which specifies the answer text you want to add to the question.
 
 <h3>Response</h3>
 
