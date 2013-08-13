@@ -41,9 +41,9 @@ Default Postback Response: In order for our servers to pass a success or failure
 
 DSU Response: In order to pass a success or failure message back to the device, you must supply an XML response containing three nodes.
 
-* message - Parent node for scans response nodes.
-* status -  This must be set to either 1 (Success) or 0 (Failure).
-* text -  The text the user will see on their device under the success status.
+* <b>message</b> - Parent node for scans response nodes.
+* <b>status</b> -  This must be set to either 1 (Success) or 0 (Failure).
+* <b>text</b> -  The text the user will see on their device under the success status.
 
 General Example :
 
