@@ -6,7 +6,7 @@
 
 * <b>section</b> must be set to <b>questions</b> .
 * <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md/#finding) .
+* <b>api_key</b> must be set to [your unique API key][1] .
 
 <h3>Optional Variables</h3>
 
@@ -36,7 +36,7 @@ Example :
 
 * <b>section</b> must be set to <b>questions</b> .
 * <b>action</b> must be set to <b>create</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md/#finding) .
+* <b>api_key</b> must be set to [your unique API key][1] .
 * <b>question_text</b> - a string which specifies the text of your new question.
 
 <h3>Optional Variables</h3>
@@ -136,3 +136,5 @@ After we receive these variables, we will respond with raw XML containing an ID 
 ~~~
 
 [Back to Top](#head)
+
+[1]:../README.md#finding
