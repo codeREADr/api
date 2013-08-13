@@ -36,7 +36,7 @@ Example :
 
 * <b>section</b> must be set to <b>questions</b> .
 * <b>action</b> must be set to <b>create</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>api_key</b> must be set to [your unique API key](../README.md/#finding) .
 * <b>question_text</b> - a string which specifies the text of your new question.
 
 <h3>Optional Variables</h3>
