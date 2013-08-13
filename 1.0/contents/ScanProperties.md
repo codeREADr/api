@@ -62,7 +62,7 @@ Same as [Creating a Scan Property](#create)
 <h3>Required Variables</h3>
 
 * <b>section</b> must be set to <b>scan_properties</b> .
-* <b>action<b> must be set to <b>delete</b> .
+* <b>action</b> must be set to <b>delete</b> .
 * <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
 * <b>scan_id</b> - an integer which specifies your scan ID.
 * <b>name</b> - a string which specifies the name of the property. Case-sensitive. Limited to 100 characters.
