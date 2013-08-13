@@ -55,7 +55,7 @@ Example :
 * <b>section</b> must be set to <b>services</b> .
 * <b>action</b> must be set to <b>create</b> .
 * <b>api_key</b> must be set to [your unique API key] [1] .
-* validation_method - an enum type that specifies the service type you desire for your new service. You must set it to one of these options:
+* <b>validation_method</b> - an enum type that specifies the service type you desire for your new service. You must set it to one of these options:
     * <b>record</b> (Record Scans Online)
     * <b>ondevicerecord</b> (Record Scans On-Device)
     * <b>database</b> (Validate Scans Online)
@@ -110,14 +110,14 @@ Variables omitted when editing a service will not affect their correspondent ser
 
 * <b>section</b> must be set to <b>services</b> .
 * <b>action</b> must be set to <b>update</b> .
-* <b>api_key</b> must be set to your unique API key .
-* service_id - an integer which specifies the particular service you'd like to update.
+* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>service_id</b> - an integer which specifies the particular service you'd like to update.
 
 <h3>Optional Variables</h3>
 
-* <b>database_id</b> - a string which only needs to be specified if validation_method is set to database or ondevicedatabase . This needs to be set to the ID of the database the scans will be validated against.
-* <b>postback_url</b> - a string which only needs to be specified if validation_method is set to postback . This needs to be set to the destination URL where all scans will be forwarded to. (More info.)
-* <b>enable_direct_scan</b> - an integer which only needs to be specified if validation_method is set to postback . It specifies whether the scans will not be routed through codeREADr platform but instead go directly to your Postback URL server. Input "1" to enable and "0" to disable. Default value is 0.
+* <b>database_id</b> - a string which only needs to be specified if <b>validation_method</b> is set to database or ondevicedatabase . This needs to be set to the ID of the database the scans will be validated against.
+* <b>postback_url</b> - a string which only needs to be specified if <b>validation_method</b> is set to postback . This needs to be set to the destination URL where all scans will be forwarded to. (More info.)
+* <b>enable_direct_scan</b> - an integer which only needs to be specified if <b>validation_method</b> is set to postback . It specifies whether the scans will not be routed through codeREADr platform but instead go directly to your Postback URL server. Input "1" to enable and "0" to disable. Default value is 0.
 * <b>service_name</b> - a string which specifies what you'd like to rename your service.
 * <b>description</b> - a string which specifies the new or modified description of your service.
 * <b>duplicate_value</b> - an integer which specifies whether duplicate barcode values will returned as valid or invalid if validation_method is set to database or ondevicedatabase . Input "1" for valid and "0" for invalid. Default value is 1.
@@ -175,7 +175,7 @@ Example :
 <h3>Required Variables</h3>
 
 * <b>section</b> must be set to <b>services</b> .
-* <b>action must be set to <b>adduserpermission</b> or <b>revokeuserpermission</b> .
+* <b>action</b> must be set to <b>adduserpermission</b> or <b>revokeuserpermission</b> .
 * <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
 * <b>service_id</b> - a string which specifies the particular services you'd like to authorize / de-authorize a user for. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all services.
 * <b>user_id</b> - a string which specifies the user IDs that you wish to authorize / de-authorize for the specified services. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all users.
@@ -201,7 +201,7 @@ Example :
 
 * <b>section</b> must be set to <b>services</b> .
 * <b>action</b> must be set to <b>addquestion</b> or <b>removequestion</b> .
-* <b>api_key<b> must be set to [your unique API key](../README.md#finding) .
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
 * <b>service_id</b> - a string which specifies the particular services you'd like to add / remove questions from. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all services.
 * <b>question_id</b> - a string which specifies the question IDs that you wish to add / remove from the specified services. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all questions.
 
