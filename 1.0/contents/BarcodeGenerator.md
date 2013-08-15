@@ -1,12 +1,14 @@
 <a name="head"></a><h1>API: Barcode Generator</h1>
 
+Make sure to read the [API Overview](../README.md) before this document.
+
 <a name="generate"></a><h2>Generating a Barcode</h2>
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>barcode</b> .
-* <b>action</b> must be set to <b>generate</b> .
-* <b>api_key</b> must be set to [your unique API key][1] .
+* <b>section</b> must be set to <b>barcode</b>.
+* <b>action</b> must be set to <b>generate</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>value</b> - a string which specifies your desired barcode value. Must be 100 characters or less.
 
 <h3>Response</h3>
@@ -23,16 +25,16 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>barcode</b> .
-* <b>action</b> must be set to <b>generate</b> .
-* <b>api_key</b> must be set to [your unique API key][1] .
+* <b>section</b> must be set to <b>barcode</b>.
+* <b>action</b> must be set to <b>generate</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>value</b> - a string which specifies your desired barcode value. Must be 100 characters or less.
 
 <h3>Optinal Variables</h3>
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| size | integer | An integer between 1 and 10 which specifies the dimensions of your barcode in 50px increments. ( Examples : <code>1</code> = 50px, <code>2</code> = 100px, <code>10</code> = 500px). |
+| size | integer | An integer between 1 and 10 which specifies the dimensions of your barcode in 50px increments. (Examples: <code>1</code> = 50px, <code>2</code> = 100px, <code>10</code> = 500px). |
 | valuesize | integer | An integer between 1 and 10 which specifies the size of the barcode ID text. The default value is <code>4</code>. |
 | valueposition | enum | Specifies whether to place the barcode ID above or below the barcode itself. You can input either <code>top</code> or <code>bottom</code> . If this parameter is not set, the default value is <code>bottom</code> . |
 | hidevalue | bool | Hides the Barcode ID text if set to non-null value. If left empty or set to <code>0</code>, the barcode ID is visible. |
