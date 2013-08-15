@@ -1,5 +1,7 @@
 <a name="head"></a><h1>API: Scans</h1>
 
+Make sure to read the [API Overview](../README.md) before this document.
+
 <a name="retrieve"></a><h2>Retrieving a List of Scans / Searching Scans</h2>
 
 <h3>Required Variables</h3>
