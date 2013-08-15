@@ -6,7 +6,7 @@
 
 * <b>section</b> must be set to <b>barcode</b> .
 * <b>action</b> must be set to <b>generate</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>api_key</b> must be set to [your unique API key][1] .
 * <b>value</b> - a string which specifies your desired barcode value. Must be 100 characters or less.
 
 <h3>Response</h3>
@@ -19,13 +19,13 @@ Example :
 
 [Back to Top](#head)
 
-<a name="generate"></a><h2>Generating a Branded Barcode (Paid Plans Only)</h2>
+<a name="generate-branded"></a><h2>Generating a Branded Barcode (Paid Plans Only)</h2>
 
 <h3>Required Variables</h3>
 
 * <b>section</b> must be set to <b>barcode</b> .
 * <b>action</b> must be set to <b>generate</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>api_key</b> must be set to [your unique API key][1] .
 * <b>value</b> - a string which specifies your desired barcode value. Must be 100 characters or less.
 
 <h3>Optinal Variables</h3>
@@ -54,3 +54,5 @@ Example :
 ![ScreenShot](https://codereadr.com/kb/images/brandedcode_normal.jpg)
 
 [Back to Top](#head)
+
+[1](../README.md#finding)
