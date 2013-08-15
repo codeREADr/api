@@ -1,5 +1,7 @@
 <a name="head"></a><h1>API: Databases</h1>
 
+Make sure to read the [API Overview](../README.md) before this document.
+
 <a name="create"></a><h2>Creating a Database</h2>
 
 <h3>Required Variables</h3>
