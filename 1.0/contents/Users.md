@@ -106,7 +106,7 @@ If the user you specified is successfully edited after we receive these variable
 * <b>section</b> must be set to <b>users</b> .
 * <b>action</b> must be set to <b>delete</b> .
 * <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
-* <b>user_id</b> - an integer or set of integers which specify the user IDs you wish to delete. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005<code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to delete all users.
+* <b>user_id</b> - an integer or set of integers which specify the user IDs you wish to delete. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to delete all users.
 
 <h3>Response</h3>
 
