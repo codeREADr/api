@@ -4,9 +4,9 @@
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>create</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>create</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_name</b> - a string which specifies the name of your new database.
 
 <h3>Optional Variables</h3>
@@ -15,9 +15,9 @@
 
 <h3>Response</h3>
 
-If your database is successfully created, we will respond with raw XML containing a status of 1 and your new database ID.
+If your database is successfully created, we will respond with raw XML containing a status of <code>1</code> and your new database ID.
 
-Example:
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -33,9 +33,9 @@ Example:
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 
 <h3>Optional Variables</h3>
 
@@ -45,7 +45,7 @@ Example:
 
 If we successfully receive your variables, we will respond with raw XML containing status and database information.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -72,17 +72,17 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
 * <b>database_name</b> -  a string which specifies the new name of your database.
 
 <h3>Response</h3>
 
-If your database is successfully renamed, we will respond with raw XML containing a status of 1.
+If your database is successfully renamed, we will respond with raw XML containing a status of <code>1</code>.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -97,9 +97,9 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
 
 <h3>Response</h3>
@@ -121,16 +121,16 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
 
 <h3>Response</h3>
 
-If your database is successfully cleared, we will respond with raw XML containing a status of 1.
+If your database is successfully cleared, we will respond with raw XML containing a status of <code>1</code>.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -145,9 +145,9 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
 
 <h3>Optional Variables</h3>
@@ -162,9 +162,9 @@ Example :
 
 <h3>Response</h3>
 
-We will respond with raw XML containing a status of 1, results count and search results.
+We will respond with raw XML containing a status of <code>1</code>, results count and search results.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -188,17 +188,17 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
-* <b>csvfile</b> - a CSV file. For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html) .
+* <b>csvfile</b> - a CSV file. For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html).
 
 <h3>Response</h3>
 
-If your CSV file is successfully imported, we will respond accordingly with raw XML containing a status of 1.
+If your CSV file is successfully imported, we will respond accordingly with raw XML containing a status of <code>1</code>.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -214,9 +214,9 @@ Click [here](https://www.codereadr.com/developer/examples/csv2dbform.php) to use
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
 * <b>value</b> - a string which specifies the barcode value. Must be 100 characters or less.
 
@@ -227,9 +227,9 @@ Click [here](https://www.codereadr.com/developer/examples/csv2dbform.php) to use
 
 <h3>Response</h3>
 
-If your barcode value is successfully added, we will respond accordingly with raw XML containing a status of 1.
+If your barcode value is successfully added, we will respond accordingly with raw XML containing a status of <code>1</code>.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -244,9 +244,9 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
 * <b>value</b> - a string which specifies the barcode value. Must be 100 characters or less.
 
@@ -257,9 +257,9 @@ Example :
 
 <h3>Response</h3>
 
-If your barcode response text and/or validity is successfully edited, we will respond accordingly with raw XML containing a status of 1.
+If your barcode response text and/or validity is successfully edited, we will respond accordingly with raw XML containing a status of <code>1</code>.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -274,17 +274,17 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key] [1] .
+* <b>section</b> must be set to <b>databases</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key][1].
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
 * <b>value</b> - a string which specifies the barcode value. Must be 100 characters or less.
 
 <h3>Response</h3>
 
-If your barcode value is successfully deleted, we will respond with raw XML containing a status of 1
+If your barcode value is successfully deleted, we will respond with raw XML containing a status of <code>1</code>.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
