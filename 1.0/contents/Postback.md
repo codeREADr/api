@@ -45,7 +45,7 @@ DSU Response: In order to pass a success or failure message back to the device, 
 * <b>status</b> -  This must be set to either <code>1</code> (Success) or <code>0</code> (Failure).
 * <b>text</b> -  The text the user will see on their device under the success status.
 
-General Example :
+*General Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -57,7 +57,7 @@ General Example :
 </xml>
 ```
 
-PHP Example :
+*PHP Example*:
 
 ```php
 header("Content-type: text/xml");
