@@ -104,9 +104,9 @@ If your database is successfully renamed, we will respond with raw XML containin
 
 <h3>Response</h3>
 
-If your database is successfully deleted, we will respond accordingly with raw XML containing a status of 1.
+If your database is successfully deleted, we will respond accordingly with raw XML containing a status of <code>1</code>.
 
-Example :
+*Example*:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
