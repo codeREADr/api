@@ -13,6 +13,8 @@
 
 If we successfully receive your variables, we will respond accordingly with raw XML containing a barcode image.
 
+Example :
+
 ![ScreenShot](https://codereadr.com/kb/images/standardbarcode_normal.gif)
 
 [Back to Top](#head)
