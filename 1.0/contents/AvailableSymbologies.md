@@ -1,7 +1,7 @@
 <a name="head"></a><h1>API: Available Symbologies</h1>
 
 | # | Type |
-| - | ---- |
+| -- | ---- |
 | 1 | Aztec |
 | 2 | C128 Isbt |
 | 3 | Codabar | 
