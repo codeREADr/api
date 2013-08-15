@@ -91,7 +91,7 @@ You can submit variables in one of four different ways:
 
 The easiest and most direct method. Just attach variables to the URL.
 
-**Example:**
+__Example__:
 
 ```
 https://api.codereadr.com/api/?section=SECTION_VARIABLE&api_key=YOUR_API_KEY&action=ACTION_VARIABLE
@@ -101,7 +101,7 @@ https://api.codereadr.com/api/?section=SECTION_VARIABLE&api_key=YOUR_API_KEY&act
 
 Create an HTML file formatted like the example below, insert your variables and open the file in your browser to send your variables.
 
-**Example:**
+__Example__:
 
 ~~~ .html
 <html>
@@ -118,7 +118,7 @@ Create an HTML file formatted like the example below, insert your variables and 
 
 Build an XML file to post to https://api.codereadr.com/api/ . Only one file can be submitted - if you submit several files, only one will be processed and the rest ignored.
 
-**Example:**
+__Example__:
 
 ~~~ .xml
 <xml>
@@ -132,7 +132,7 @@ Build an XML file to post to https://api.codereadr.com/api/ . Only one file can 
 
 You can also build an XML string, assign it to the variable named xml and either send it via GET or POST.
 
-**Example:**
+__Example__:
 
 ~~~ .xml
 <xml>
