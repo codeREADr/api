@@ -42,7 +42,7 @@ Default Postback Response: In order for our servers to pass a success or failure
 DSU Response: In order to pass a success or failure message back to the device, you must supply an XML response containing three nodes.
 
 * <b>message</b> - Parent node for scans response nodes.
-* <b>status</b> -  This must be set to either 1 (Success) or 0 (Failure).
+* <b>status</b> -  This must be set to either <code>1</code> (Success) or <code>0</code> (Failure).
 * <b>text</b> -  The text the user will see on their device under the success status.
 
 General Example :
@@ -74,7 +74,7 @@ Please note that the non-DSU postback response size is limited to 10KB. Any data
 
 The app waits for your server response for 15 seconds. If the app does not receive one after that time, the request is cancelled and the app displays an error message.
 
-Make sure your response's content-type is set to text-xml , regardless of your communication method. ( Example : When using PHP, include the line header('Content-type: text/xml'); in your response.)
+Make sure your response's content-type is set to text-xml , regardless of your communication method. ( Example : When using PHP, include the line <code>header('Content-type: text/xml');</code> in your response.)
 
 All special XML entities must be encoded. If you see the message below, your response contains illegal XML characters:
 
