@@ -59,7 +59,7 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
     * [Deleting a Scan Property](contents/ScanProperties.md#delete)
 * [API: Barcode Generator](contents/BarcodeGenerator.md#head)
     * [Generating a Barcode](contents/BarcodeGenerator.md#generate)
-    * [Generating a Branded Barcode (Paid Plans Only)](contents/BarcodeGenerator.md#generatae-branded)
+    * [Generating a Branded Barcode (Paid Plans Only)](contents/BarcodeGenerator.md#generate-branded)
 * [API: Error Codes](contents/ErrorCodes.md)
 * [API: Available Symbologies](contents/AvailableSymbologies.md)
 
