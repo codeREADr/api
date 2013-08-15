@@ -36,7 +36,7 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
     * [Renaming a Database](contents/Databases.md#update)
     * [Deleting a Database](contents/Databases.md#delete)
     * [Clearing a Database](contents/Databases.md#clear)
-    * [Retrieving Values of a Database / Search for Values in a Database](contents/Databases.md#showvalue)
+    * [Retrieving Values of a Database / Search for Values in a Database](contents/Databases.md#showvalues)
     * [Uploading a CSV File to a Database](contents/Databases.md#upload)
     * [Adding a Barcode Value to a Database](contents/Databases.md#addvalue)
     * [Editing Barcode Responses and Results](contents/Databases.md#editvalue)
