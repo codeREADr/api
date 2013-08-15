@@ -1,5 +1,7 @@
 <a name="head"></a><h1>API: Uploads</h1>
 
+Make sure to read the [API Overview](../README.md) before this document.
+
 <a name="retrieve"></a><h2>Retrieving a List of Uploads</h2>
 
 <h3>Required Variables</h3>
