@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Services</h1>
 
-Make sure to read the API Introduction before this document.
+Make sure to read the [API Overview](../README.md) before this document.
 
 <a name="retrieve"></a><h2>Retrieving A Service List</h2>
 
