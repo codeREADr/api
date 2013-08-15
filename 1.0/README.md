@@ -79,15 +79,15 @@ The codeREADr API is located at:
 
 Every function performed through the API requires at least these three variables to be submitted:
 
-* section - a string specifying the section of your account you wish to configure
-* action - a string specifying the action you wish to perform on that area
-* api_key - a string with your unique API key
+* <b>section</b> - a string specifying the section of your account you wish to configure
+* <b>action</b> - a string specifying the action you wish to perform on that area
+* <b>api_key</b> - a string with your unique API key
 
 
 
-You can submit variables in one of four different ways.
+You can submit variables in one of four different ways:
 
-* GET
+* <b>GET</b>
 
 The easiest and most direct method. Just attach variables to the URL.
 
@@ -97,7 +97,7 @@ Example:
 https://api.codereadr.com/api/?section=SECTION_VARIABLE&api_key=YOUR_API_KEY&action=ACTION_VARIABLE
 ```
 
-* POST
+* <b>POST</b>
 
 Create an HTML file formatted like the example below, insert your variables and open the file in your browser to send your variables.
 
@@ -114,7 +114,7 @@ Example:
 </html>
 ~~~
 
-* XML File
+* <b>XML File</b>
 
 Build an XML file to post to https://api.codereadr.com/api/ . Only one file can be submitted - if you submit several files, only one will be processed and the rest ignored.
 
@@ -128,7 +128,7 @@ Example:
 </xml>
 ~~~
 
-* XML String
+* <b>XML String</b>
 
 You can also build an XML string, assign it to the variable named xml and either send it via GET or POST.
 
