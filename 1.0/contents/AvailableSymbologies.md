@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Available Symbologies</h1>
 
-
+| ID | Type |
 | --- | ---- |
 | 1 | Aztec |
 | 2 | C128 Isbt |
