@@ -1,5 +1,7 @@
 <a name="head"></a><h1>API: Scan Properties</h1>
 
+Make sure to read the [API Overview](../README.md) before this document.
+
 <a name="create"></a><h2>Creating a Scan Property</h2>
 
 <h3>Required Variables</h3>
