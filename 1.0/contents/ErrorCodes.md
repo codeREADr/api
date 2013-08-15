@@ -2,7 +2,7 @@
 
 Error codes generated when performing an API action will display in the <b><status></b> node of the XML response.
 
-Example:
+*Example*:
 
 ~~~ .xml
 <?xml version="1.0" encoding="UTF-8"?>
