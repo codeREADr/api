@@ -45,7 +45,7 @@
     * <b>manual</b> will create a Short Answer question. The user can manually answer with the device's keyboard.
     * <b>manualnumeric</b> will create a Short Answer question limited to numeric entry. The user can manually answer using the device's dial pad.
     * <b>option</b> will create a Multiple Choice (Single Answer) question. The user will be prompted to choose one of several options.
-    * <b>dropdown</b> will create a Multiple Choice (Single Answer) question formatted as a dropdown menu, similar to the <select> HTML element. When the user taps the question, they will be presented with the native picker UI of the OS.
+    * <b>dropdown</b> will create a Multiple Choice (Single Answer) question formatted as a dropdown menu, similar to the "<select>" HTML element. When the user taps the question, they will be presented with the native picker UI of the OS.
     * <b>gps</b> will prompt the user to confirm their current location, as determined by the device's onboard GPS.
 
 <h3>Response</h3>
