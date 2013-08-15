@@ -4,23 +4,23 @@
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>uploads</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>section</b> must be set to <b>uploads</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
 
 <h3>Optional Variables</h3>
 
-* <b>service_id</b> - an integer or series of integers which specifies the particular services you'd like to search for scans within. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all services. This parameter is set to <b>all</b> by default.
-* <b>device_id</b> - an integer or series of integers which will return only scans conducted by the specifed devices. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all devices in your search. This parameter is set to <b>all</b> by default.
-* <b>user_id</b> - an integer or series of integers which will return only scans conducted by the specified users. You can specify a single integer or a comma-separated list of integers ( Examples : 1005 or 1005, 1010, 1254 ). You can also use the keyword <b>all</b> to include all users in your search. This parameter is set to <b>all</b> by default.
+* <b>service_id</b> - an integer or series of integers which specifies the particular services you'd like to search for scans within. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default.
+* <b>device_id</b> - an integer or series of integers which will return only scans conducted by the specifed devices. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default.
+* <b>user_id</b> - an integer or series of integers which will return only scans conducted by the specified users. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default.
 * <b>limit</b> - an integer which limits the maximum number of results displayed within the list.
-* <b>offset</b> - an integer which offsets the results shown. Only valid if <b>limit</b> is provided. ( Example : a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan.)
+* <b>offset</b> - an integer which offsets the results shown. Only valid if <b>limit</b> is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan).
 
 <h3>Response
 
 After we receive these variables, we will respond with raw XML containing status and scan data.
 
-Example:
+*Example*:
 
 ~~~ .xml
 <?xml version="1.0" encoding="UTF-8"?>
