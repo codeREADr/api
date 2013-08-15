@@ -114,9 +114,9 @@ Variables omitted when editing a service will not affect their correspondent ser
 
 <h3>Optional Variables</h3>
 
-* <b>database_id</b> - a string which only needs to be specified if <b>validation_method</b> is set to database or ondevicedatabase . This needs to be set to the ID of the database the scans will be validated against.
-* <b>postback_url</b> - a string which only needs to be specified if <b>validation_method</b> is set to postback . This needs to be set to the destination URL where all scans will be forwarded to. [More info](https://codereadr.com/kb/content/14/69/en/postback-direct-scan-to-url-dsu.html).
-* <b>enable_direct_scan</b> - an integer which only needs to be specified if <b>validation_method</b> is set to postback . It specifies whether the scans will not be routed through codeREADr platform but instead go directly to your Postback URL server. Input <code>1</code> to enable and <code>0</code> to disable. Default value is <code>0</code>.
+* <b>database_id</b> - a string which only needs to be specified if <b>validation_method</b> is set to <code>database</code> or <code>ondevicedatabase</code>. This needs to be set to the ID of the database the scans will be validated against.
+* <b>postback_url</b> - a string which only needs to be specified if <b>validation_method</b> is set to <code>postback</code>. This needs to be set to the destination URL where all scans will be forwarded to. [More info](https://codereadr.com/kb/content/14/69/en/postback-direct-scan-to-url-dsu.html).
+* <b>enable_direct_scan</b> - an integer which only needs to be specified if <b>validation_method</b> is set to <code>postback</code>. It specifies whether the scans will not be routed through codeREADr platform but instead go directly to your Postback URL server. Input <code>1</code> to enable and <code>0</code> to disable. Default value is <code>0</code>.
 * <b>service_name</b> - a string which specifies what you'd like to rename your service.
 * <b>description</b> - a string which specifies the new or modified description of your service.
 * <b>duplicate_value</b> - an integer which specifies whether duplicate barcode values will returned as valid or invalid if <b>validation_method</b> is set to database or ondevicedatabase . Input <code>1</code> for valid and <code>0</code> for invalid. Default value is <code>1</code>.
