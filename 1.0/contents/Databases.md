@@ -4,7 +4,7 @@
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases/b> .
+* <b>section</b> must be set to <b>databases</b> .
 * <b>action</b> must be set to <b>create</b> .
 * <b>api_key</b> must be set to [your unique API key] [1] .
 * <b>database_name</b> - a string which specifies the name of your new database.
@@ -76,7 +76,7 @@ Example :
 * <b>action</b> must be set to <b>retrieve</b> .
 * <b>api_key</b> must be set to [your unique API key] [1] .
 * <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
-* <b>database_name<b> -  a string which specifies the new name of your database.
+* <b>database_name</b> -  a string which specifies the new name of your database.
 
 <h3>Response</h3>
 
@@ -158,7 +158,7 @@ Example :
 * <b>responselike</b> - a string to perform a partial match search against the response. (Example: <code>responselike=abc</code> will match values with responses abc1 , 123abc , 123abc123 , etc)
 * <b>validity</b> - an integer to filter results by validity. Set to <code>1</code> to show only valid values, and set it to <code>0</code> to show only invalid.
 * <b>limit</b> - an integer which limits the maximum number of results displayed within the list.
-* <b>offset<b> - an integer which offsets the results shown. Only valid if limit is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 values that begins with the 6th value.)
+* <b>offset</b> - an integer which offsets the results shown. Only valid if limit is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 values that begins with the 6th value.)
 
 <h3>Response</h3>
 
