@@ -55,4 +55,4 @@ Example :
 
 [Back to Top](#head)
 
-[1](../README.md#finding)
+[1]:../README.md#finding
