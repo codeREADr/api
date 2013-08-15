@@ -141,7 +141,7 @@ Example :
 
 [Back to Top](#head)
 
-<a name="showvalues"></a><h2>Retrieving values of a Database / Search for values in a Database</h2>
+<a name="showvalues"></a><h2>Retrieving Values of a Database / Search for Values in a Database</h2>
 
 <h3>Required Variables</h3>
 
