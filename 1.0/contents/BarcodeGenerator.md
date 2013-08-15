@@ -35,7 +35,7 @@ If we successfully receive your variables, we will respond accordingly with raw 
 | valueposition | enum | Specifies whether to place the barcode ID above or below the barcode itself. You can input either top or bottom . If this parameter is not set, the default value is bottom . |
 | hidevalue | bool | Hides the Barcode ID text if set to non-null value. If left empty or set to 0, the barcode ID is visible. |
 | text | string | Specifies the custom text you would like to place below the barcode. |
-| textsize | integer	An integer between 1 and 30 which specifies the pixel height of the custom text below your barcode. (Sizes 8-16 recommended). |
+| textsize | integer | An integer between 1 and 30 which specifies the pixel height of the custom text below your barcode. (Sizes 8-16 recommended). |
 | textalignment | enum | The alignment of the custom text below your barcode. Input L for left-aligned text, C for center-aligned and R for right-aligned. Text is left-aligned by default. |
 | logo | file / string | The image you would like placed near the barcode. You can post it as a file or specify a URL. Supported file types: GIF, JPG and PNG. |
 | logoposition |enum| The position of your custom image in relation to the barcode. You can input top , bottom , left and right . Set to top by default. |
