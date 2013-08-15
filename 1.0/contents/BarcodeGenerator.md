@@ -43,7 +43,7 @@ Example :
 | textalignment | The alignment of the custom text below your barcode. Input <code>L</code> for left-aligned text, <code>C</code> for center-aligned and <code>R</code> for right-aligned. Text is left-aligned by default. |
 | logo | The image you would like placed near the barcode. You can post it as a file or specify a URL. Supported file types: GIF, JPG and PNG. |
 | logoposition | The position of your custom image in relation to the barcode. You can input <code>top</code> , <code>bottom</code> , <code>left</code> , and <code>right</code> . Set to <code>top</code> by default. |
-| filetype | enum | The desired file type of your outputted barcode. You can input either <code>JPG</code> , <code>PNG</code> or <code>GIF</code> . Set to <code>GIF</code> by default. |
+| filetype | The desired file type of your outputted barcode. You can input either <code>JPG</code> , <code>PNG</code> or <code>GIF</code> . Set to <code>GIF</code> by default. |
 | errorcorrection | The desired error correction level of your barcode. Barcodes with lower error correction can be scanned more rapidly, while barcodes with higher error correction can be read even if sections of the code are damaged or missing. You can input either <code>L</code> , <code>M</code> , <code>Q</code> or <code>H</code> . The default value is <code>L</code> . [Learn more here](http://en.wikipedia.org/wiki/Qr_code#Error_correction). |
 | barcodetype | The desired format of your outputted barcode. You can input either <code>qr</code> or <code>pdf417</code> . Set to <code>qr</code> by default. |
 
