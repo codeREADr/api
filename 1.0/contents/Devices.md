@@ -6,9 +6,9 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>devices</b> .
-* <b>action</b> must be set to <b>retrieve</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>section</b> must be set to <b>devices</b>.
+* <b>action</b> must be set to <b>retrieve</b>.
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
 
 <h3>Optional Variables</h3>
 
@@ -38,9 +38,9 @@ After we receive these variables, we will respond with raw XML containing status
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>devices</b> .
-* <b>action</b> must be set to <b>update</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
+* <b>section</b> must be set to <b>devices</b>.
+* <b>action</b> must be set to <b>update</b>.
+* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
 * <b>device_id</b> - an integer which specifies the particular device ID you'd like to edit.
 * <b>device_name</b> - a string which specifies what you'd like to rename the device you're editing.
 
