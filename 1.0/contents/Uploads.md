@@ -6,17 +6,21 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>uploads</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>uploads</b>. |
+| action | Must be set to <b>retrieve</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
 
 <h3>Optional Variables</h3>
 
-* <b>service_id</b> - an integer or series of integers which specifies the particular services you'd like to search for scans within. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default.
-* <b>device_id</b> - an integer or series of integers which will return only scans conducted by the specifed devices. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default.
-* <b>user_id</b> - an integer or series of integers which will return only scans conducted by the specified users. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default.
-* <b>limit</b> - an integer which limits the maximum number of results displayed within the list.
-* <b>offset</b> - an integer which offsets the results shown. Only valid if <b>limit</b> is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan).
+| Variable | Description |
+| -------- | ----------- |
+| service_id | An integer or series of integers which specifies the particular services you'd like to search for scans within. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default. |
+| device_id | An integer or series of integers which will return only scans conducted by the specifed devices. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default. |
+| user_id | An integer or series of integers which will return only scans conducted by the specified users. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. This parameter is set to <code>all</code> by default. |
+| limit | An integer which limits the maximum number of results displayed within the list. |
+| offset | An integer which offsets the results shown. Only valid if <b>limit</b> is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan). |
 
 <h3>Response
 
