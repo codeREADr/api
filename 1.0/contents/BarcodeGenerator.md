@@ -27,6 +27,8 @@ Example :
 
 <h3>Required Variables</h3>
 
+| Variable | Description |
+| -------- | ----------- |
 | section | Must be set to <b>barcode</b>. |
 | action | Must be set to <b>generate</b>. |
 | api_key | Must be set to [your unique API key][1]. |
