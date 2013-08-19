@@ -6,14 +6,18 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>create</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_name</b> - a string which specifies the name of your new database.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_name | A string which specifies the name of your new database. |
 
 <h3>Optional Variables</h3>
 
-* <b>case_sensitivity</b> - a boolean value which specifies whether database values are case sensitive. Once the database is created, this setting cannot be changed. Specify <code>1</code> for case-sensitive validation, or <code>0</code> for case-insensitive validation. Set to <code>0</code> (not case-sensitive) by default.
+| Variable | Description |
+| -------- | ----------- |
+| case_sensitivity | A boolean value which specifies whether database values are case sensitive. Once the database is created, this setting cannot be changed. Specify <code>1</code> for case-sensitive validation, or <code>0</code> for case-insensitive validation. Set to <code>0</code> (not case-sensitive) by default. |
 
 <h3>Response</h3>
 
@@ -35,13 +39,17 @@ If your database is successfully created, we will respond with raw XML containin
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
 
 <h3>Optional Variables</h3>
 
-* <b>database_id</b> - an integer or series of integers which specifies the numeric IDs of the databases you want to list. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code> ). Set to <code>all</code> by default.
+| Variable | Description |
+| -------- | ----------- |
+| database_id | An integer or series of integers which specifies the numeric IDs of the databases you want to list. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code> ). Set to <code>all</code> by default.
 
 <h3>Response</h3>
 
@@ -74,11 +82,13 @@ If we successfully receive your variables, we will respond with raw XML containi
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
-* <b>database_name</b> -  a string which specifies the new name of your database.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
+| database_name | A string which specifies the new name of your database. |
 
 <h3>Response</h3>
 
@@ -99,10 +109,12 @@ If your database is successfully renamed, we will respond with raw XML containin
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
 
 <h3>Response</h3>
 
@@ -123,10 +135,12 @@ If your database is successfully deleted, we will respond accordingly with raw X
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
 
 <h3>Response</h3>
 
@@ -147,20 +161,24 @@ If your database is successfully cleared, we will respond with raw XML containin
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
 
 <h3>Optional Variables</h3>
 
-* <b>value</b> - a string to perform an exact match search against the value. (Example: <code>value=abc</code> will limit results to one value)
-* <b>valuelike</b> - a string to perform a partial match search against the value. (Example: <code>value=abc</code> will match abc1 , 123abc , 123abc123 , etc)
-* <b>response</b> - a string to perform an exact match search against the response. (Example: <code>response=abc</code> will limit results to one value)
-* <b>responselike</b> - a string to perform a partial match search against the response. (Example: <code>responselike=abc</code> will match values with responses abc1 , 123abc , 123abc123 , etc)
-* <b>validity</b> - an integer to filter results by validity. Set to <code>1</code> to show only valid values, and set it to <code>0</code> to show only invalid.
-* <b>limit</b> - an integer which limits the maximum number of results displayed within the list.
-* <b>offset</b> - an integer which offsets the results shown. Only valid if limit is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 values that begins with the 6th value.)
+| Variable | Description |
+| -------- | ----------- |
+| value | A string to perform an exact match search against the value. (Example: <code>value=abc</code> will limit results to one value). |
+| valuelike | A string to perform a partial match search against the value. (Example: <code>value=abc</code> will match abc1 , 123abc , 123abc123 , etc). |
+| response | A string to perform an exact match search against the response. (Example: <code>response=abc</code> will limit results to one value). |
+| responselike | A string to perform a partial match search against the response. (Example: <code>responselike=abc</code> will match values with responses abc1 , 123abc , 123abc123 , etc). |
+| validity | An integer to filter results by validity. Set to <code>1</code> to show only valid values, and set it to <code>0</code> to show only invalid. |
+| limit | An integer which limits the maximum number of results displayed within the list. |
+| offset | An integer which offsets the results shown. Only valid if limit is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 values that begins with the 6th value). |
 
 <h3>Response</h3>
 
@@ -190,11 +208,13 @@ We will respond with raw XML containing a status of <code>1</code>, results coun
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
-* <b>csvfile</b> - a CSV file. For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html).
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
+| csvfile | A CSV file. For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html). |
 
 <h3>Response</h3>
 
@@ -216,16 +236,20 @@ Click [here](https://www.codereadr.com/developer/examples/csv2dbform.php) to use
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
-* <b>value</b> - a string which specifies the barcode value. Must be 100 characters or less.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
+| value | A string which specifies the barcode value. Must be 100 characters or less. |
 
 <h3>Optional Variables</h3>
 
-* <b>response</b> - a string which specifies the barcode value's associated response text.
-* <b>validity</b> - a boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Set to <code>1</code> (valid) by default.
+| Variable | Description |
+| -------- | ----------- |
+| response | A string which specifies the barcode value's associated response text. |
+| validity | A boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Set to <code>1</code> (valid) by default. |
 
 <h3>Response</h3>
 
@@ -246,16 +270,20 @@ If your barcode value is successfully added, we will respond accordingly with ra
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
-* <b>value</b> - a string which specifies the barcode value. Must be 100 characters or less.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
+| value | A string which specifies the barcode value. Must be 100 characters or less. |
 
 <h3>Optional Variables</h3>
 
-* <b>response</b> - a string which specifies the barcode value's associated response text.
-* <b>validity</b> - a boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Validity remains unchanged by default.
+| Variable | Description |
+| -------- | ----------- |
+| response | A string which specifies the barcode value's associated response text. |
+| validity | A boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Validity remains unchanged by default. |
 
 <h3>Response</h3>
 
@@ -276,11 +304,13 @@ If your barcode response text and/or validity is successfully edited, we will re
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>databases</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>database_id</b> - an integer which specifies the numeric ID of the database you want to rename.
-* <b>value</b> - a string which specifies the barcode value. Must be 100 characters or less.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>databases</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database you want to rename. |
+| value | A string which specifies the barcode value. Must be 100 characters or less. |
 
 <h3>Response</h3>
 
