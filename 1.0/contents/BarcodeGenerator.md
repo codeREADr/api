@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Barcode Generator</h1>
 
-Make sure to read the [API Overview](../README.md) before this document.
+Make sure to read the [API Overview](../README.md) before reading this document.
 
 <a name="generate"></a><h2>Generating a Barcode</h2>
 
@@ -8,8 +8,8 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>barcode</b>. |
-| action | Must be set to <b>generate</b>. |
+| section | Must be set to <code>barcode</code>. |
+| action | Must be set to <code>generate</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | value | A string which specifies your desired barcode value. Must be 100 characters or less. |
 
@@ -17,7 +17,7 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 If we successfully receive your variables, we will respond accordingly with raw XML containing a barcode image.
 
-Example :
+*Example*:
 
 ![ScreenShot](https://codereadr.com/kb/images/standardbarcode_normal.gif)
 
@@ -29,8 +29,8 @@ Example :
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>barcode</b>. |
-| action | Must be set to <b>generate</b>. |
+| section | Must be set to <code>barcode</code>. |
+| action | Must be set to <code>generate</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | value | A string which specifies your desired barcode value. Must be 100 characters or less. |
 
@@ -55,7 +55,7 @@ Example :
 
 If we have successfully received your variables, we will respond with raw XML containing your barcode image.
 
-Example :
+*Example*:
 
 ![ScreenShot](https://codereadr.com/kb/images/brandedcode_normal.jpg)
 
