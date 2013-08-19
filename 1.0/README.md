@@ -79,9 +79,11 @@ The codeREADr API is located at:
 
 Every function performed through the API requires at least these three variables to be submitted:
 
-* <b>section</b> - a string specifying the section of your account you wish to configure
-* <b>action</b> - a string specifying the action you wish to perform on that area
-* <b>api_key</b> - a string with your unique API key
+| Variable | Description |
+| -------- | ----------- |
+| section | A string specifying the section of your account you wish to configure. |
+| action | A string specifying the action you wish to perform on that area. |
+| api_key | A string with your unique API key. |
 
 
 
