@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Users</h1>
 
-Make sure to read the [API Overview](../README.md) before this document.
+Make sure to read the [API Overview](../README.md) before reading this document.
 
 <a name="retrieve"></a><h2>Retrieving a List of Users</h2>
 
@@ -8,8 +8,8 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 | Variables | Description |
 | --------- | ----------- |
-| section | Must be set to <b>users</b>. |
-| action | Must be set to <b>retrieve</b>. |
+| section | Must be set to <code>users</code>. |
+| action | Must be set to <code>retrieve</code>. |
 | api_key | Must be set to [your unique API key](../README.md#finding). |
 
 <h3>Optional Variables</h3>
@@ -47,8 +47,8 @@ After we receive these variables, we will respond with raw XML containing status
 
 | Variables | Description |
 | --------- | ----------- |
-| section | Must be set to <b>users</b>. |
-| action | Must be set to <b>retrieve</b>. |
+| section | Must be set to <code>users</code>. |
+| action | Must be set to <code>create</code>. |
 | api_key | Must be set to [your unique API key](../README.md#finding). |
 | username | A string which specifies the name of your new user. We will return an error code if the username already exists in the system. |
 | password | A string which specifies the password of your new user. |
@@ -83,8 +83,8 @@ Variables omitted when editing a user will not affect the variable's corresponde
 
 | Variables | Description |
 | --------- | ----------- |
-| section | Must be set to <b>users</b>. |
-| action | Must be set to <b>retrieve</b>. |
+| section | Must be set to <code>users</code>. |
+| action | Must be set to <code>update</code>. |
 | api_key | Must be set to [your unique API key](../README.md#finding). |
 | user_id | An integer which specifies the user ID you wish to edit. |
 
@@ -117,8 +117,8 @@ If the user you specified is successfully edited after we receive these variable
 
 | Variables | Description |
 | --------- | ----------- |
-| section | Must be set to <b>users</b>. |
-| action | Must be set to <b>retrieve</b>. |
+| section | Must be set to <code>users</code>. |
+| action | Must be set to <code>delete</code>. |
 | api_key | Must be set to [your unique API key](../README.md#finding). |
 | user_id | An integer or set of integers which specify the user IDs you wish to delete. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to delete all users. |
 
