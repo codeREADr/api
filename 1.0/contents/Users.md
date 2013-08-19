@@ -6,13 +6,17 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>users</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
+| Variables | Description |
+| --------- | ----------- |
+| section | Must be set to <b>users</b>. |
+| action | Must be set to <b>retrieve</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
 
 <h3>Optional Variables</h3>
 
-* <b>user_id</b> - an integer or set of integers specifying the user IDs you would like us to list. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all users. This parameter is set to <code>all</code> by default.
+| Variables | Description |
+| --------- | ----------- |
+| user_id | An integer or set of integers specifying the user IDs you would like us to list. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all users. This parameter is set to <code>all</code> by default. |
 
 <h3>Response</h3>
 
@@ -41,15 +45,19 @@ After we receive these variables, we will respond with raw XML containing status
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>users</b>.
-* <b>action</b> must be set to <b>create</b>.
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
-* <b>username</b> - a string which specifies the name of your new user. We will return an error code if the username already exists in the system.
-* <b>password</b> - a string which specifies the password of your new user.
+| Variables | Description |
+| --------- | ----------- |
+| section | Must be set to <b>users</b>. |
+| action | Must be set to <b>retrieve</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
+| username | A string which specifies the name of your new user. We will return an error code if the username already exists in the system. |
+| password | A string which specifies the password of your new user. |
 
 <h3>Optional Variables</h3>
 
-* <b>limit</b> - an integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default.
+| Variables | Description |
+| --------- | ----------- |
+| limit | An integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default. |
 
 <h3>Response</h3>
 
@@ -73,16 +81,20 @@ Variables omitted when editing a user will not affect the variable's corresponde
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>users</b>.
-* <b>action</b> must be set to <b>update</b>.
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
-* <b>user_id</b> - an integer which specifies the user ID you wish to edit.
+| Variables | Description |
+| --------- | ----------- |
+| section | Must be set to <b>users</b>. |
+| action | Must be set to <b>retrieve</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
+| user_id | An integer which specifies the user ID you wish to edit. |
 
 <h3>Optional Variables</h3>
 
-* <b>username</b> - a string which specifies what you'd like to rename the user. We will return an error code if the new username already exists in the system.
-* <b>password</b> - a string which specifies the new password for the user.
-* <b>limit</b> - an integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default.
+| Variables | Description |
+| --------- | ----------- |
+| username | A string which specifies what you'd like to rename the user. We will return an error code if the new username already exists in the system. |
+| password | A string which specifies the new password for the user. |
+| limit | An integer which specifies the maximum number of devices the user can activate during a billing period. A new user can activate an unlimited number of devices by default. |
 
 <h3>Response</h3>
 
@@ -103,10 +115,12 @@ If the user you specified is successfully edited after we receive these variable
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>users</b> .
-* <b>action</b> must be set to <b>delete</b> .
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding) .
-* <b>user_id</b> - an integer or set of integers which specify the user IDs you wish to delete. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to delete all users.
+| Variables | Description |
+| --------- | ----------- |
+| section | Must be set to <b>users</b>. |
+| action | Must be set to <b>retrieve</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
+| user_id | An integer or set of integers which specify the user IDs you wish to delete. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to delete all users. |
 
 <h3>Response</h3>
 
