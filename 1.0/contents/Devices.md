@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Devices</h1>
 
-Make sure to read the [API Overview](../README.md) before this document.
+Make sure to read the [API Overview](../README.md) before reading this document.
 
 <a name="retrieve"></a><h2>Retrieving a List of Devices</h2>
 
@@ -8,8 +8,8 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>devices</b>. |
-| action | Must be set to <b>retrieve</b>. |
+| section | Must be set to <code>devices</code>. |
+| action | Must be set to <code>retrieve</code>. |
 | api_key | Must be set to [your unique API key](../README.md#finding). |
 
 <h3>Optional Variables</h3>
@@ -44,8 +44,8 @@ After we receive these variables, we will respond with raw XML containing status
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>devices</b>. |
-| action | Must be set to <b>retrieve</b>. |
+| section | Must be set to <code>devices</code>. |
+| action | Must be set to <code>update</code>. |
 | api_key | Must be set to [your unique API key](../README.md#finding). |
 | device_id | An integer which specifies the particular device ID you'd like to edit. |
 | device_name | A string which specifies what you'd like to rename the device you're editing. |
