@@ -6,10 +6,12 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>barcode</b>.
-* <b>action</b> must be set to <b>generate</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>value</b> - a string which specifies your desired barcode value. Must be 100 characters or less.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>barcode</b>. |
+| action | Must be set to <b>generate</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| value | A string which specifies your desired barcode value. Must be 100 characters or less. |
 
 <h3>Response</h3>
 
@@ -25,15 +27,15 @@ Example :
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>barcode</b>.
-* <b>action</b> must be set to <b>generate</b>.
-* <b>api_key</b> must be set to [your unique API key][1].
-* <b>value</b> - a string which specifies your desired barcode value. Must be 100 characters or less.
+| section | Must be set to <b>barcode</b>. |
+| action | Must be set to <b>generate</b>. |
+| api_key | Must be set to [your unique API key][1]. |
+| value | A string which specifies your desired barcode value. Must be 100 characters or less. |
 
 <h3>Optional Variables</h3>
 
-| Name | Description |
-| ---- | ----------- |
+| Variable | Description |
+| -------- | ----------- |
 | size | An integer between 1 and 10 which specifies the dimensions of your barcode in 50px increments. (Examples: <code>1</code> = 50px, <code>2</code> = 100px, <code>10</code> = 500px). |
 | valuesize | An integer between 1 and 10 which specifies the size of the barcode ID text. The default value is <code>4</code>. |
 | valueposition | Specifies whether to place the barcode ID above or below the barcode itself. You can input either <code>top</code> or <code>bottom</code> . If this parameter is not set, the default value is <code>bottom</code> . |
