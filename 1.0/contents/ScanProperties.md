@@ -6,12 +6,14 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>scan_properties</b>.
-* <b>action</b> must be set to <b>create</b>.
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
-* <b>scan_id</b> - an integer or set of integers specifying the set of scan IDs you would like to create property for. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005,1010,1254</code>).
-* <b>name</b> - a string which specifies the name of your new property. Case-sensitive. Limited to 100 characters.
-* <b>value</b> - a string which specifies the value of your new property. Case-sensitive. Limited to 100 characters.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>scan_properties</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
+| scan_id | An integer or set of integers specifying the set of scan IDs you would like to create property for. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005,1010,1254</code>). |
+| name | A string which specifies the name of your new property. Case-sensitive. Limited to 100 characters. |
+| value | A string which specifies the value of your new property. Case-sensitive. Limited to 100 characters. |
 
 <h3>Response</h3>
 
@@ -32,11 +34,13 @@ If your scan property is successfully created, we will respond with raw XML cont
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>scan_properties</b>.
-* <b>action</b> must be set to <b>retrieve</b>.
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
-* <b>scan_id</b> - an integer which specifies your scan ID.
-* <b>name</b> - a string which specifies the name of the property. Not case sensitive. Limited to 100 characters.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>scan_properties</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
+| scan_id | An integer which specifies your scan ID. |
+| name | A string which specifies the name of the property. Not case sensitive. Limited to 100 characters. |
 
 <h3>Response</h3>
 
@@ -63,11 +67,13 @@ Same as [Creating a Scan Property](#create)
 
 <h3>Required Variables</h3>
 
-* <b>section</b> must be set to <b>scan_properties</b>.
-* <b>action</b> must be set to <b>delete</b>.
-* <b>api_key</b> must be set to [your unique API key](../README.md#finding).
-* <b>scan_id</b> - an integer which specifies your scan ID.
-* <b>name</b> - a string which specifies the name of the property. Case-sensitive. Limited to 100 characters.
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <b>scan_properties</b>. |
+| action | Must be set to <b>create</b>. |
+| api_key | Must be set to [your unique API key](../README.md#finding). |
+| scan_id | An integer which specifies your scan ID. |
+| name | A string which specifies the name of the property. Case-sensitive. Limited to 100 characters. |
 
 <h3>Response</h3>
 
