@@ -8,8 +8,8 @@ Make sure to read the [API Overview](../README.md) before this document.
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>create</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_name | A string which specifies the name of your new database. |
 
@@ -41,8 +41,8 @@ If your database is successfully created, we will respond with raw XML containin
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>retrieve</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 
 <h3>Optional Variables</h3>
@@ -84,8 +84,8 @@ If we successfully receive your variables, we will respond with raw XML containi
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>update</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 | database_name | A string which specifies the new name of your database. |
@@ -111,8 +111,8 @@ If your database is successfully renamed, we will respond with raw XML containin
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>delete</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 
@@ -137,8 +137,8 @@ If your database is successfully deleted, we will respond accordingly with raw X
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>clear</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 
@@ -163,8 +163,8 @@ If your database is successfully cleared, we will respond with raw XML containin
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>showvalues</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 
@@ -210,8 +210,8 @@ We will respond with raw XML containing a status of <code>1</code>, results coun
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>upload</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 | csvfile | A CSV file. For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html). |
@@ -238,8 +238,8 @@ Click [here](https://www.codereadr.com/developer/examples/csv2dbform.php) to use
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>addvalue</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 | value | A string which specifies the barcode value. Must be 100 characters or less. |
@@ -272,8 +272,8 @@ If your barcode value is successfully added, we will respond accordingly with ra
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>editvalue</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 | value | A string which specifies the barcode value. Must be 100 characters or less. |
@@ -306,8 +306,8 @@ If your barcode response text and/or validity is successfully edited, we will re
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Must be set to <b>databases</b>. |
-| action | Must be set to <b>create</b>. |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>deletevalue</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 | value | A string which specifies the barcode value. Must be 100 characters or less. |
