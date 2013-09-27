@@ -1,4 +1,4 @@
-<a name="head"></a><h1>Overview</h1>
+<h1><a name="head"></a>Overview</h1>
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
 
