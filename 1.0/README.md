@@ -4,201 +4,64 @@ Developers! Want to embed codeREADr into your own application? Use our API to in
 
 Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
-<div>
 
 <a name="toc"></a><h1>Table of Contents</h1>
 
-<ul>
-<li>
-Overview
-<ul>
-<li>
-<a href="#finding">Finding Your API Key</a>
-</li>
-<li>
-<a href="#submitting">Submitting Variables</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Postback.md#head">Postback + Direct Scan to URL (DSU)</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Postback.md#default-direct">Default Postback URL vs. Direct Scan to URL</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Postback.md#benefits">DSU Benefits</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Postback.md#variables">Variables Posted To Your Server</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Postback.md#response">Your Response</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Services.md#head">API: Services</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Services.md#retrieve">Retrieving a Service List</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Services.md#create">Creating a Service</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Services.md#edit">Editing a Service</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Services.md#delete">Deleting a Service</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Services.md#authorize">Authorizing / De-Authorizing Users For Services</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Services.md#add">Adding / Removing Questions from a Service</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Users.md#head">API: Users</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Users.md#retrieve">Retrieving a List of Users</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Users.md#create">Creating a User</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Users.md#edit">Editing a User</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Users.md#delete">Deleting a User</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Devices.md#head">API: Devices</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Devices.md#retrieve">Retrieving a List of Devices</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Devices.md#edit">Editing a Device</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#head">API: Databases</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#create">Creating a Database</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#retrieve">Retrieving A List of Databases</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#update">Renaming a Database</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#delete">Deleting a Database</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#clear">Clearing a Database</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#showvalues">Retrieving Values of a Database / Search for Values in a Database</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#upload">Uploading a CSV File to a Database</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#addvalue">Adding a Barcode Value to a Database</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#editvalue">Editing Barcode Responses and Results</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Databases.md#deletevalue">Deleting Values From a Database</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Scans.md#head">API: Scans</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Scans.md#retrieve">Retrieving a List of Scans / Searching Scans</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Scans.md#delete">Deleting Scans</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Questions.md#head">API: Questions and Location Tracking</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Questions.md#retrieve">Retrieving a List of Questions</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Questions.md#create">Creating a Question</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Questions.md#delete">Deleting a Question</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Questions.md#add">Adding an Answer Option</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Questions.md#deleteanswer">Deleting an Answer Option</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Uploads.md#head">API: Uploads</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/Uploads.md#retrieve">Retrieving a List of Uploads</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/ScanProperties.md#head">API: Scan Properties</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/ScanProperties.md#create">Creating a Scan Property</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/ScanProperties.md#retrieve">Retrieving a Scan Property Value</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/ScanProperties.md#update">Updating a Scan Property</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/ScanProperties.md#delete">Deleting a Scan Property</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/BarcodeGenerator.md#head">API: Barcode Generator</a>
-<ul>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/BarcodeGenerator.md#generate">Generating a Barcode</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/BarcodeGenerator.md#generate-branded">Generating a Branded Barcode (Paid Plans Only)</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/ErrorCodes.md">API: Error Codes</a>
-</li>
-<li>
-<a href="/codeREADr/api/blob/master/1.0/contents/AvailableSymbologies.md">API: Available Symbologies</a>
-</li>
-</ul>
-
-</div>
+* Overview
+    * [Finding Your API Key](#finding)
+    * [Submitting Variables](#submitting)
+* [Postback + Direct Scan to URL (DSU)](contents/Postback.md#head)
+    * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
+    * [DSU Benefits](contents/Postback.md#benefits)
+    * [Variables Posted To Your Server](contents/Postback.md#variables)
+    * [Your Response](contents/Postback.md#response)
+* [API: Services](contents/Services.md#head)
+    * [Retrieving a Service List](contents/Services.md#retrieve)
+    * [Creating a Service](contents/Services.md#create)
+    * [Editing a Service](contents/Services.md#edit)
+    * [Deleting a Service](contents/Services.md#delete)
+    * [Authorizing / De-Authorizing Users For Services](contents/Services.md#authorize)
+    * [Adding / Removing Questions from a Service](contents/Services.md#add)
+* [API: Users](contents/Users.md#head)
+    * [Retrieving a List of Users](contents/Users.md#retrieve)
+    * [Creating a User](contents/Users.md#create)
+    * [Editing a User](contents/Users.md#edit)
+    * [Deleting a User](contents/Users.md#delete)
+* [API: Devices](contents/Devices.md#head)
+    * [Retrieving a List of Devices](contents/Devices.md#retrieve)
+    * [Editing a Device](contents/Devices.md#edit)
+* [API: Databases](contents/Databases.md#head)
+    * [Creating a Database](contents/Databases.md#create)
+    * [Retrieving A List of Databases](contents/Databases.md#retrieve)
+    * [Renaming a Database](contents/Databases.md#update)
+    * [Deleting a Database](contents/Databases.md#delete)
+    * [Clearing a Database](contents/Databases.md#clear)
+    * [Retrieving Values of a Database / Search for Values in a Database](contents/Databases.md#showvalues)
+    * [Uploading a CSV File to a Database](contents/Databases.md#upload)
+    * [Adding a Barcode Value to a Database](contents/Databases.md#addvalue)
+    * [Editing Barcode Responses and Results](contents/Databases.md#editvalue)
+    * [Deleting Values From a Database](contents/Databases.md#deletevalue)
+* [API: Scans](contents/Scans.md#head)
+    * [Retrieving a List of Scans / Searching Scans](contents/Scans.md#retrieve)
+    * [Deleting Scans](contents/Scans.md#delete)
+* [API: Questions and Location Tracking](contents/Questions.md#head)
+    * [Retrieving a List of Questions](contents/Questions.md#retrieve)
+    * [Creating a Question](contents/Questions.md#create)
+    * [Deleting a Question](contents/Questions.md#delete)
+    * [Adding an Answer Option](contents/Questions.md#add)
+    * [Deleting an Answer Option](contents/Questions.md#deleteanswer)
+* [API: Uploads](contents/Uploads.md#head)
+    * [Retrieving a List of Uploads](contents/Uploads.md#retrieve)
+* [API: Scan Properties](contents/ScanProperties.md#head)
+    * [Creating a Scan Property](contents/ScanProperties.md#create)
+    * [Retrieving a Scan Property Value](contents/ScanProperties.md#retrieve)
+    * [Updating a Scan Property](contents/ScanProperties.md#update)
+    * [Deleting a Scan Property](contents/ScanProperties.md#delete)
+* [API: Barcode Generator](contents/BarcodeGenerator.md#head)
+    * [Generating a Barcode](contents/BarcodeGenerator.md#generate)
+    * [Generating a Branded Barcode (Paid Plans Only)](contents/BarcodeGenerator.md#generate-branded)
+* [API: Error Codes](contents/ErrorCodes.md)
+* [API: Available Symbologies](contents/AvailableSymbologies.md)
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
 
