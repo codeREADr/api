@@ -65,6 +65,7 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
 <h6 name='EndToC'></h6>
 
+
 <a name="finding"></a><h2>Finding Your API Key</h2>
 
 A valid API key is required for any site functions performed through our API. To locate your API key, sign into codeREADr.com or create an account. Once authenticated, click the “Preferences” link in the site header. Your API key is located in the Admin Settings section.
