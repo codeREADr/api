@@ -4,7 +4,9 @@ Developers! Want to embed codeREADr into your own application? Use our API to in
 
 Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
-<h6 name='BeginToC'></h6>
+<h6 name='BeginToCDONOTREMOVE'></h6>
+<span name='foo' />
+
 <a name="toc"></a><h1>Table of Contents</h1>
 
 * Overview
@@ -63,7 +65,7 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 * [API: Error Codes](contents/ErrorCodes.md)
 * [API: Available Symbologies](contents/AvailableSymbologies.md)
 
-<h6 name='EndToC'></h6>
+<h6 name='EndToCDONOTREMOVE'></h6>
 
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
