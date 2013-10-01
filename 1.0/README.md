@@ -4,6 +4,7 @@ Developers! Want to embed codeREADr into your own application? Use our API to in
 
 Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
+<!--BeginToC -->
 
 <a name="toc"></a><h1 name='toc_header'>Table of Contents</h1>
 
@@ -62,6 +63,8 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
     * [Generating a Branded Barcode (Paid Plans Only)](contents/BarcodeGenerator.md#generate-branded)
 * [API: Error Codes](contents/ErrorCodes.md)
 * [API: Available Symbologies](contents/AvailableSymbologies.md)
+
+<!--EndToC -->
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
 
