@@ -1,8 +1,7 @@
 <a name="head"></a><h1>API: Available Timezones</h1>
 
-| Timezone | Description                                               |
+| Timezone | Description |
 | -------- | -------------------------------------------------------   |
-
 | -12:00   | (GMT -12:00) International Date Line West                 | 
 | -11:00   | (GMT -11:00) Midway Island, Samoa                         | 
 | -10:00   | (GMT -10:00) Hawaii                                       | 
