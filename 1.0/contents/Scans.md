@@ -26,7 +26,6 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | end_date | A date (formatted as YYYY-MM-DD). Use this to search for scans conducted before a given date. Blank by default. |
 | end_time | A timestamp (24-hour, formatted as HH:mm:ss). Use this to search for scans conducted before a given time. Only valid if <b>end_date</b> is provided. |
 | upload_id | An integer or comma-separated series of integers which can be used to retrieve scans [from a specific upload](Uploads.md). |
-| order_desc | A boolean type which specifies the order in which your scan list will be provided. Input any value to display scan data in descending order. If this variable is left blank, scan data will be displayed in ascending order. |
 | limit | An integer which limits the maximum number of results displayed within the list. Default value is <code>10000</code>. |
 | offset | An integer which offsets the results shown. Only valid if <b>limit</b> is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan). |
 | showProperties | A boolean which toggles showing scan properties in the returned XML. Set it to <code>1</code> to show properties. Default value is <code>0</code> (hide properties). |
@@ -40,17 +39,21 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | responselike | A string to perform a partial match search against the scan response (result). (Example: <code>responselike=abc</code> will match values with responses abc1, 123abc, 123abc123, etc). |
 | timestamp_received | An integer which toggles the display of timestamp_received XML node. If this variable is set to 1 or 2 the timestamp_received node is added to the XML and will contain the timestamp when the scan was actually received by codeREADr (e.g. scan upload timestamp for on-device made scans). Additionally, if <code>timestamp_received=1</code>, then variables <b>start_date</b>, <b>start_time</b>, <b>end_date</b>, <b>end_time</b> will use timestamp_received column to perform filtering, instead of regular timestamp (which is the timestamp when the scan was made on device). |
 | timezone_offset | A string which specifies a GMT timezone offset for the scan timestamps. You can dynamically use the timezone configured by the account holder by setting the parameter to the keyword <b>account</b>. (Examples: <code>timezone_offset=account</code>, or <code>timezone_offset=+08:00</code> works for Beijing, <code>timezone_offset=00:00</code> works for London, <code>timezone_offset=-03:00</code> works for Brazil, etc.) The parameter is set to codeREADr's local time by default (-05:00 GMT, Eastern Time US & Canada). See a list of timezone offsets [here](AvailableTimezones.md). |
-| order_by | An enum type which specifies the order in which you would like your scan list to be sorted. You must set it to one of these options: <code>service_name</code>, <code>service_id</code>, <code>user_name</code>, <code>user_id</code>, <code>device_name</code>, <code>device_id</code>, <code>barcode</code>, <code>status</code>, <code>response</code>, or <code>timestamp</code>. |
-* <code>service_name</code> (alphabetical by service name)
-* <code>service_id</code> (numerical by service ID)
-* <code>user_name</code> (alphabetical by username)
-* <code>user_id</code> (numerical by user ID)
-* <code>device_name</code> (alphabetical by device name)
-* <code>device_id</code> (numerical by device ID)
-* <code>barcode</code> (alphabetical by barcode value)
-* <code>status</code> (numerical by validation status)
-* <code>response</code> (alphabetical by barcode response)
-* <code>timestamp</code> (chronological order)
+| order_by | An enum type which specifies the order in which you would like your scan list to be sorted. You must set it from the order_by key set below. For ascending order use the key without the \_desc suffix (e.g. <code>device_id</code>) and for descending use the key with the \_desc suffix (e.g. <code>device_id_desc</code>). You can also use a comma-separated list of keys to specify multiple sub-levels of ordering (e.g. <code>device_id,service_id_desc,timestamp</code>). |
+
+*order_by key set*:
+* <code>barcode</code> or <code>barcode_desc</code> (alphabetical by barcode value)
+* <code>device_name</code> or <code>device_name_desc</code> (alphabetical by device name)
+* <code>device_id</code> or <code>device_id_desc</code> (numerical by device ID)
+* <code>response</code> or <code>response_desc</code> (alphabetical by barcode response)
+* <code>scan_id</code> or <code>scan_id_desc</code> (numerical by scan ID)
+* <code>service_id</code> or <code>service_id_desc</code> (numerical by service ID)
+* <code>service_name</code> or <code>service_name_desc</code> (alphabetical by service name)
+* <code>status</code> or <code>status_desc</code> (numerical by validation status)
+* <code>timestamp</code> or <code>timestamp_desc</code> (chronological order)
+* <code>timestamp_received</code> or <code>timestamp_received_desc</code> (chronological order)
+* <code>user_id</code> or <code>user_id_desc</code> (numerical by user ID)
+* <code>user_name</code> or <code>user_name_desc</code> (alphabetical by username)
 
 <h3>Response</h3>
 
