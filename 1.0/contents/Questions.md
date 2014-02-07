@@ -51,13 +51,13 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 
 | Variable | Description |
 | -------- | ----------- |
-| question_type | An enum type which specifies the type of question the user will be presented with. You can set the question_type to <code>manual</code>, <code>manualnumeric</code>, <code>option</code>, <code>dropdown</code>, or <code>gps</code>. |
+| question_type | An enum type which specifies the type of question the user will be presented with. You can set the question_type to <code>manual</code>, <code>manualnumeric</code>, <code>option</code>, <code>dropdown</code>, <code>gps</code>, or <code>dropboximage</code>. |
 * <code>manual</code> will create a Short Answer question. The user can manually answer with the device's keyboard.
 * <code>manualnumeric</code> will create a Short Answer question limited to numeric entry. The user can manually answer using the device's dial pad.
 * <code>option</code> will create a Multiple Choice (Single Answer) question. The user will be prompted to choose one of several options.
 * <code>dropdown</code> will create a Multiple Choice (Single Answer) question formatted as a dropdown menu, similar to the "select" HTML element. When the user taps the question, they will be presented with the native picker UI of the OS.
 * <code>gps</code> will prompt the user to confirm their current location, as determined by the device's onboard GPS.
-
+* <code>dropboximage</code> will prompt the user to take a photo or choose one from their device's gallery. 
 <h3>Response</h3>
 
 If your question is successfully created, we will respond with raw XML containing a status of <code>1</code> and the numerical ID of your new question.
