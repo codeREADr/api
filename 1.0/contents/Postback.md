@@ -29,7 +29,7 @@ Note: If required, with DSU you will have to create your own history URL for in-
 | userid | The numeric ID of the user who performed the scan. |
 | questions | An array of question texts with numeric question IDs as indices. This variable is only sent if the service contains data collection questions. *Note: Only regular Postback services receive this variable, DSU services only receive the answers variable.* |
 | answers | An array of corresponding answers with numeric question IDs as indices. This variable is only sent if service contains data collection questions. In case of multiple answers given, they are separated by a delimiter, which is <code>&#124;^&#124;</code>, so you can split by it. |
-| properties_name | Existing scan properties may include Capture Type, Mask Matched (for pattern validation services), Time Zone and GPS Location, depending on the configuration of your service.|
+| *property names* | The scan property variables posted depend on the configuration of your service. A few existing scan property variables are ```capture_type``` (i.e. camera scan, manual entry, value lookup), ```time_zone``` (of the device), ```gps_location``` (background location collection).|
 
 These variables are sent via HTTP POST with every scan. Grabbing these results may vary from language to language, so we suggest looking up how to capture POST variables if you do not know how to do so.
 
