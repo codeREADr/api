@@ -231,6 +231,7 @@ If your users are successfully authorized / de-authorized for the specified serv
 | Variable | Description |
 | -------- | ----------- |
 | condition | An enum type which specifies the condition on which the question will display. There are four possible values: <code>pre_submit</code>, <code>post_submit</code>,  <code>valid_scan</code>, <code>invalid_scan</code>. If the parameter is not specified, the default value is <code>pre_submit</code>.|
+| required | A string which specifies the question IDs you wish to make mandatory to answer. You can specify a single integer or comma-seperated list of integers. Only used when adding questions to a service. |
 * <code>pre_submit</code> will display the question before the scan is submitted to the server.
 * <code>post_submit</code> will display the question after the scan is submitted to the server.
 * <code>valid_scan</code> will display the question after the scan is submitted to the server, but only if the scan is valid.
