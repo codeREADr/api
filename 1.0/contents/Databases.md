@@ -49,7 +49,8 @@ If your database is successfully created, we will respond with raw XML containin
 
 | Variable | Description |
 | -------- | ----------- |
-| database_id | An integer or series of integers which specifies the numeric IDs of the databases you want to list. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code> ). Set to <code>all</code> by default.
+| database_id | An integer or series of integers which specifies the numeric IDs of the databases you want to list. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code> ). Set to <code>all</code> by default.|
+| info_level | Possible values are ```names``` and ```services```. Target just the info you need for faster response times. <br/> ```names``` - Only includes the name node (excluding associated services and potentially costly item count). <br/> ```services``` - Includes both name and associated service nodes (excluding the slower item count in the default request). |
 
 <h3>Response</h3>
 
@@ -229,6 +230,40 @@ If your CSV file is successfully imported, we will respond accordingly with raw 
 </xml>
 ```
 Click [here](https://www.codereadr.com/developer/examples/csv2dbform.php) to use a simple HTML form that imports the entries of a CSV file into a specified codeREADr database.
+
+[Back to Top](#head)
+
+<a name="upsertvalue"></a><h2>Inserting or Updating a Barcode</h2>
+
+<h3>Required Variables</h3>
+
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>upsertvalue</code>. |
+| api_key | Must be set to [your unique API key][1]. |
+| database_id | An integer which specifies the numeric ID of the database. |
+| value | A string which specifies the barcode value. Must be 100 characters or less. |
+
+<h3>Optional Variables</h3>
+
+| Variable | Description |
+| -------- | ----------- |
+| response | A string which specifies the barcode value's associated response text. |
+| validity | A boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Set to <code>1</code> (valid) by default. |
+
+<h3>Response</h3>
+
+This action allows you to update your database without first checking the state of the value. If your barcode value is successfully inserted or updated to match your request options, will respond accordingly with raw XML containing a status of <code>1</code>.
+
+*Example*:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+</xml>
+```
 
 [Back to Top](#head)
 
