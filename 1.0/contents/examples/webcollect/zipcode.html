@@ -1,0 +1,48 @@
+<!-- <iosheight>75</iosheight> -->
+<html>
+<head>
+<title>Zip Code Question</title>
+  <meta name="viewport" content="initial-scale=1">  
+  <script type="text/javascript">
+
+ // Regular expression for validating zip code format.
+ var postalCodeRegExp = new RegExp("^\\d{5}(-\\d{4})?$");
+
+ // The app calls this to overwrite the current answer with a saved answer.
+ function setAnswerForCR(the_answer) {
+    document.getElementById("zipcode").value = the_answer;
+ }
+
+ // Sends the answer to the app. It should be called anytime the answer changes.
+ function fireAnswerForCR() {
+    var the_answer = document.getElementById("zipcode").value;
+
+    // Optional auto insert of the "-" when the user does not.
+    if (the_answer.length > 5 && the_answer.charAt(5) != "-") {
+       the_answer = the_answer.substring(0,5) + "-" + the_answer.substring(5,the_answer.length);
+       setAnswerForCR(the_answer);
+    }
+
+    // Optional style feedback when the_answer validity changes.
+    var isValid = postalCodeRegExp.test(the_answer);
+    //document.getElementById("zipcode").style.backgroundColor = isValid ? "white" : "yellow";
+    document.getElementById("zipcode").style.color = isValid ? "black" : "red";
+
+    // The line that actually sends the answer to the codeREADr app.
+    window.location = "codereadr:answerForCR:" + the_answer;
+ }
+ 
+ // Tests the current answer input for a regular expression match.
+ function isAnswerValidForCR() {
+    var the_answer = document.getElementById("zipcode").value;
+    var isValid = postalCodeRegExp.test(the_answer);
+    return isValid;
+ }
+
+  </script>
+  </head>
+  <body>
+    <!-- We call fireAnswerForCR anytime the input changes. -->
+    <input type="tel" id="zipcode" oninput="fireAnswerForCR()" style="height:40px;font-size:14pt" />
+  </body>
+</html>
