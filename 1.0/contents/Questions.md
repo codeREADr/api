@@ -51,13 +51,19 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 
 | Variable | Description |
 | -------- | ----------- |
-| question_type | An enum type which specifies the type of question the user will be presented with. You can set the question_type to <code>manual</code>, <code>manualnumeric</code>, <code>option</code>, <code>dropdown</code>, <code>gps</code>, or <code>dropboximage</code>. |
-* <code>manual</code> will create a Short Answer question. The user can manually answer with the device's keyboard.
-* <code>manualnumeric</code> will create a Short Answer question limited to numeric entry. The user can manually answer using the device's dial pad.
-* <code>option</code> will create a Multiple Choice (Single Answer) question. The user will be prompted to choose one of several options.
-* <code>dropdown</code> will create a Multiple Choice (Single Answer) question formatted as a dropdown menu, similar to the "select" HTML element. When the user taps the question, they will be presented with the native picker UI of the OS.
-* <code>gps</code> will prompt the user to confirm their current location, as determined by the device's onboard GPS.
-* <code>dropboximage</code> will prompt the user to take a photo or choose one from their device's gallery. 
+| question_type | An enum type which specifies the type of question you want to create. If not specified the question type defaults to <code>manual</code>. See the list below for available question types.|
+
+<h5><code>question_type</code> List</h5>
+_Note: To make questions of certain types usable (e.g. `checkbox`, `dropdown`, `webcollect`), you must use the question id returned in the result to <a href="#add">add answer option(s)</a> to your question._
+* **`checkbox`** will create a Multiple Choice (Multiple Answer) question. The user will be able to choose as many of the answer options as you add to the question. _<a href="#add">Requires answer options.</a>_
+* **`dropboximage`** will prompt the user to take a photo or choose one from their device's gallery. 
+* **`dropdown`** will create a Multiple Choice (Single Answer) question formatted as a dropdown menu, similar to the "select" HTML element. When the user taps the question, they will be presented with the native picker UI of the OS. _<a href="#add">Requires answer option.</a>_
+* **`gps`** will prompt the user to confirm their current location, as determined by the device's onboard GPS.
+* **`manual`** will create a Short Answer question. The user can manually answer with the device's keyboard.
+* **`manualnumeric`** will create a Short Answer question limited to numeric entry. The user can manually answer using the device's dial pad.
+* **`option`** will create a Multiple Choice (Single Answer) question. The user will be prompted to choose one of several options. _<a href="#add">Requires answer options.</a>_
+* **`webcollect`** will display your <a href="CustomQuestions.md">Custom Question</a> in a Web View below your `question_text`. _<a href="#add">Requires answer option.</a>_
+
 <h3>Response</h3>
 
 If your question is successfully created, we will respond with raw XML containing a status of <code>1</code> and the numerical ID of your new question.
