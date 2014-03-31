@@ -42,7 +42,7 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Mst be set to <code>questions</code>. |
+| section | Must be set to <code>questions</code>. |
 | action | Must be set to <code>create</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | question_text | A string which specifies the text of your new question. |
@@ -86,7 +86,7 @@ If your question is successfully created, we will respond with raw XML containin
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Mst be set to <code>questions</code>. |
+| section | Must be set to <code>questions</code>. |
 | action | Must be set to <code>delete</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | question_id | An integer or series of integers which specifies the question IDs that you wish to include in the list. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all questions. |
@@ -112,7 +112,7 @@ If you have successfully deleted your question, we will respond with raw XML con
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Mst be set to <code>questions</code>. |
+| section | Must be set to <code>questions</code>. |
 | action | Must be set to <code>addanswer</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | question_id | An integer which specifies the numeric question ID you want to add an answer to. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all answers. |
@@ -140,7 +140,7 @@ After we receive these variables, we will respond with raw XML containing an ID 
 
 | Variable | Description |
 | -------- | ----------- |
-| section | Mst be set to <code>questions</code>. |
+| section | Must be set to <code>questions</code>. |
 | action | Must be set to <code>deleteanswer</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | answer_id | An integer or series of integers specifying the numerical IDs of the answers you want to remove from a question. |
