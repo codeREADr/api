@@ -207,6 +207,8 @@ We will respond with raw XML containing a status of <code>1</code>, results coun
 
 <a name="upload"></a><h2>Uploading a CSV File to a Database</h2>
 
+You must use HTTP POST method to pass the csvfile. 
+
 <h3>Required Variables</h3>
 
 | Variable | Description |
@@ -215,7 +217,7 @@ We will respond with raw XML containing a status of <code>1</code>, results coun
 | action | Must be set to <code>upload</code>. |
 | api_key | Must be set to [your unique API key][1]. |
 | database_id | An integer which specifies the numeric ID of the database. |
-| csvfile | A CSV file. For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html). |
+| csvfile | A CSV file. (Not the url to the file) For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html). |
 
 <h3>Response</h3>
 
