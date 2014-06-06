@@ -26,6 +26,8 @@ Error codes generated when performing an API action will display in the <b><stat
 | 104 |    No file has been received. Try specifying MAX_FILE_SIZE=1000000before submitting the file. |
 | 105 |    The file is larger than allowed. |
 | 110 |    Invalid action Parameter |
+| 111 |    You have exceeded the number of permitted API calls during current minute. The counter is reset at the beginning of every minute. |
+| 113 |    You have exceeded the number of permitted API calls during current day. The counter is reset every midnight. |
 | 120 |    Invalid section Parameter |
 | 131 |    Missing required variable: service_id |
 | 132 |    Missing required variable: user_id |
