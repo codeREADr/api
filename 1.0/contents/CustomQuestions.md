@@ -16,10 +16,10 @@ This may go without saying but for your question to work offline it cannot be de
 &nbsp;&nbsp;&nbsp;&nbsp; This function is responsible receiving the answer ```VALUE``` from the app and loading it into your Custom Question UI.
 
 ##### ```fireAnswerForCR()```
-&nbsp;&nbsp;&nbsp;&nbsp; Sends the answer to the app by firing a formatted location load event ```window.location = codereadr:answerForCR:NEW_ANSWER_VALUE``` that the app will consume. You do not have to modify this function but it should be called anytime the answer value changes.
+&nbsp;&nbsp;&nbsp;&nbsp; Sends the answer to the app by firing a location load event (i.e. ```window.location = codereadr:answerForCR:NEW_ANSWER_VALUE```) that the app will consume. You do not have to modify this function but it should be called anytime the answer value changes or to set a default answer.
 
 ##### ```isAnswerValidForCR()```
-&nbsp;&nbsp;&nbsp;&nbsp; A boolean function that returns false if the current answer is invalid and should prevent the user from submitting the scan. Return true the answer is valid or if you simply don't need to validate this type of question.
+&nbsp;&nbsp;&nbsp;&nbsp; A boolean function that returns false if the current answer is invalid and should prevent the user from submitting the scan. By default you should return `true`. Only return `false` if you are validating the answer and want to block scan submit when the answer is not valid.
 
 ## Example<a name="example"></a>
 Below is a barebones zip code custom question. (An extend version: <a href="https://github.com/codeREADr/api/blob/master/1.0/contents/examples/webcollect/zipcode.html" target="_blank">View</a> or <a href="https://raw.github.com/codeREADr/api/master/1.0/contents/examples/webcollect/zipcode.html" target="_blank">Download</a>)
