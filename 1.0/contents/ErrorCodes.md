@@ -51,6 +51,11 @@ Error codes generated when performing an API action will display in the <b><stat
 | 218 |    You need to specify an end date. |
 | 219 |    Service name is invalid |
 | 221 |    Please enter a valid Postback URL, starting with http:// or https:// |
+| 222 |    The URL you entered is not valid. Please start your URL with either http:// or https:// |
+| 223 |    You can only configure direct scanning when you create a postback service. |
+| 224 |    Regular expression pattern/replacement must be updated together. |
+| 225 |    Options `postback_receiver_only`, `postback_real_time_scans` and `postback_uploaded_scans` are not compatible with services of type `postback`. They are intended for services of other validation types (i.e. `record`, `database`, etc) that also have a `postback_url` set. |
+| 226 |    You cannot configure postback handling without specifying a postback_url. |
 | 261 |    Question could not be deleted |
 | 262 |    Invalid Question ID |
 | 265 |    Answer could not be added |
@@ -64,6 +69,7 @@ Error codes generated when performing an API action will display in the <b><stat
 | 340 |    Invalid username. Try taking out any spaces, or using fewer punctuation marks. |
 | 341 |    Please enter a password. |
 | 342 |    Please enter a username. |
+| 343 |    You cannot use this action to update or delete the app-user tied to the account owner. |
 | 410 |    Required device POST variables not supplied |
 | 804 |    The scan could not be deleted. |
 | 1017 |    Barcode value does not exist. |
