@@ -1,6 +1,11 @@
 <a name="head"></a><h1>API: Barcode Generator</h1>
 
 Make sure to read the [API Overview](../README.md) before reading this document.
+*Note:* The API URL for generating barcodes is different from the normal API URL.
+```
+https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY
+```
+</quote>
 
 <a name="generate"></a><h2>Generating a Barcode</h2>
 
@@ -41,6 +46,7 @@ If we successfully receive your variables, we will respond accordingly with raw 
 | size | An integer between 1 and 10 which specifies the dimensions of your barcode in 50px increments. (Examples: <code>1</code> = 50px, <code>2</code> = 100px, <code>10</code> = 500px). |
 | valuesize | An integer between 1 and 10 which specifies the size of the barcode ID text. The default value is <code>4</code>. |
 | valueposition | Specifies whether to place the barcode ID above or below the barcode itself. You can input either <code>top</code> or <code>bottom</code> . If this parameter is not set, the default value is <code>bottom</code> . |
+| hideframe | When set to <code>1</code> it hides the the black frame around the barcode that is present by default. |
 | hidevalue | Hides the Barcode ID text if set to non-null value. If left empty or set to <code>0</code>, the barcode ID is visible. |
 | text | Specifies the custom text you would like to place below the barcode. |
 | textsize | An integer between 1 and 30 which specifies the pixel height of the custom text below your barcode. (Sizes 8-16 recommended). |
