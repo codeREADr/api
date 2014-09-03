@@ -80,6 +80,7 @@ A valid API key is required for any site functions performed through our API. To
 The codeREADr API is located at:
 
 * https://api.codereadr.com/api/
+* https://barcode.codereadr.com/api/  &nbsp;&nbsp;&nbsp; *(Barcode Generator API)*
 
 Every function performed through the API requires at least these three variables to be submitted:
 
@@ -97,10 +98,16 @@ You can submit variables in one of four different ways:
 
 The easiest and most direct method. Just attach variables to the URL.
 
-*Example*:
+*Default API Example*:
 
 ```
-https://api.codereadr.com/api/?section=SECTION_VARIABLE&api_key=YOUR_API_KEY&action=ACTION_VARIABLE
+https://api.codereadr.com/api/?section=SECTION_VARIABLE&action=ACTION_VARIABLE&api_key=YOUR_API_KEY
+```
+
+*Barcode Generator API Example*:
+
+```
+https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY
 ```
 
 * <b>POST</b>
