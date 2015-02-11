@@ -1,5 +1,5 @@
 # codeREADr Custom Questions<a name="head"></a>
-Custom Questions are away for developers to code their own question types tailored to collect and validate answer data using HTML and Javascript.
+Custom Questions are a way for developers to code their own question types tailored to collect and validate answer data using HTML and Javascript.
 
 ## Implementation<a name="implement"></a>
 Concept is simply adding a few javascript functions to your own web page for sending, receiving and validating the current answer state of your question.
