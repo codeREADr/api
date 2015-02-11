@@ -25,9 +25,9 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 ~~~ .xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
-    <question id= 1>
-        <status>1</status>
-        <count>1</count>
+    <status>1</status>
+    <count>1</count>
+    <question id="1">
         <text>Would you like soda with your movie?</text>
         <type>option</type>
         <answer id="27">Yes</answer>
