@@ -2,7 +2,7 @@
 
 Make sure to read the [API Overview](../README.md) before reading this document.
 
-<a name="retrieve"></a><h2>Retrieving your current API request limits.</h2>
+<a name="retrieve"></a><h2>Retrieving Your API Limits</h2>
 
 <h3>Required Variables</h3>
 
