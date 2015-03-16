@@ -22,7 +22,7 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | limit | An integer which limits the maximum number of results displayed within the list. |
 | offset | An integer which offsets the results shown. Only valid if <b>limit</b> is provided. (Example: a limit of 20 and an offset of 5 will display a list of 20 scans that begins with the 5th scan). |
 
-<h3>Response
+<h3>Response</h3>
 
 After we receive these variables, we will respond with raw XML containing status and scan data.
 
