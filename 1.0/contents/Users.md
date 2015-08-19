@@ -137,7 +137,7 @@ If the users you specified are successfully deleted after we receive these varia
 
 [Back to Top](#head)
 
-<a name="validate"></a><h2>Validate a User</h2>
+<a name="validate"></a><h2>Validating a User</h2>
 
 <h3>Required Variables</h3>
 
@@ -172,7 +172,7 @@ After we receive these variables and if credentials are valid, we will respond w
 
 [Back to Top](#head)
 
-<a name="validate"></a><h2>Username Availablility</h2>
+<a name="available"></a><h2>Username Availability</h2>
 
 <h3>Required Variables</h3>
 
