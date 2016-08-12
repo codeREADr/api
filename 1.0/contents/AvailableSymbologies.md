@@ -1,5 +1,10 @@
 <a name="head"></a><h1>API: Available Symbologies</h1>
 
+{page_header_info}
+{ "title":"List of available symbologies",
+  "meta":"Learn about the list of available symbologies codeREADr offers." }
+{page_header_info}
+
 | ID | Type |
 | --- | ---- |
 | 1 | Aztec |
