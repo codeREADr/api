@@ -1,3 +1,9 @@
+<!-- seo
+{
+"title":"Limits for codeREADr API Documentation",
+"meta":"Learn how to retrieve your API limits with the required variables."
+}
+seo -->
 <a name="head"></a><h1>API: Limits</h1>
 
 Make sure to read the [API Overview](../README.md) before reading this document.
