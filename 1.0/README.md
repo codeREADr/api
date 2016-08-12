@@ -71,7 +71,7 @@ Note: Use of our API is only available for accounts with a [Paid Plan] [1].
 
 A valid API key is required for any site functions performed through our API. To locate your API key, sign into codeREADr.com or create an account. Once authenticated, click the “Preferences” link in the site header. Your API key is located in the Admin Settings section.
 
-![API Key Location](https://www.codereadr.com/kb/images/apikey_normal.png)
+![API Key Location](https://secure.codereadr.com/images/apidocs_apikey.png)
 
 <a href="#head">Back to Top</a>
 
