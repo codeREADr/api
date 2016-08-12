@@ -1,5 +1,10 @@
 <a name="head"></a><h1>Overview</h1>
 
+{page_header_info}
+{ "title":"Embed codeREADr into your own application",
+  "meta":"Learn how to use our API to integrate our functionality into your software" }
+{page_header_info}
+
 Developers! Want to embed codeREADr into your own application? Use our API to integrate our functionality into your software. Make sure to read this document before you get started. 
 
 Note: Use of our API is only available for accounts with a [Paid Plan] [1].
