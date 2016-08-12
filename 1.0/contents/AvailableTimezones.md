@@ -1,5 +1,10 @@
 <a name="head"></a><h1>API: Available Timezones</h1>
 
+{page_header_info}
+{ "title":"List of available timezones",
+  "meta":"Learn about the list of available timezones codeREADr offers" }
+{page_header_info}
+
 | Timezone | Description |
 | -------- | -------------------------------------------------------   |
 | -12:00   | (GMT -12:00) International Date Line West                 | 
