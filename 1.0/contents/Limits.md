@@ -1,5 +1,7 @@
 <a name="head"></a><h1>API: Limits</h1>
 
+{page_header_info} { "title":"Limits for codeREADr API Documentation", "meta":"Learn how to retrieve your API limits with the required variables." } {page_header_info}
+
 Make sure to read the [API Overview](../README.md) before reading this document.
 
 <a name="retrieve"></a><h2>Retrieving Your API Limits</h2>
