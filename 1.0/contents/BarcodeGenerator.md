@@ -20,11 +20,22 @@ https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_
 
 <h3>Response</h3>
 
-If we successfully receive your variables, we will respond accordingly with raw XML containing a barcode image.
+If your API request is successful we will respond with the raw barcode image <i>(not XML)</i>.
 
-*Example*:
+*Success Example*:
 
-![ScreenShot](https://codereadr.com/kb/images/standardbarcode_normal.gif)
+![ScreenShot](https://secure.codereadr.com/images/apidocs_standardbarcode.gif)
+
+If the API request fails we will responde with XML.
+
+*Failure Example*:
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>0</status>
+    <error code="120">Invalid section Parameter</error>
+</xml>
+~~~
 
 [Back to Top](#head)
 
@@ -59,11 +70,22 @@ If we successfully receive your variables, we will respond accordingly with raw 
 
 <h3>Response</h3>
 
-If we have successfully received your variables, we will respond with raw XML containing your barcode image.
+If your API request is successful we will respond with the raw barcode image <i>(not XML)</i>.
 
-*Example*:
+*Success Example*:
 
-![ScreenShot](https://codereadr.com/kb/images/brandedcode_normal.jpg)
+![ScreenShot](https://secure.codereadr.com/images/apidocs_brandedbarcode.jpg)
+
+If the API request fails we will responde with XML.
+
+*Failure Example*:
+~~~ .xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>0</status>
+    <error code="120">Invalid section Parameter</error>
+</xml>
+~~~
 
 [Back to Top](#head)
 
