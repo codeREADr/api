@@ -5,7 +5,7 @@
   "meta":"Learn how to generate a regular and branded barcode with the required and optional variables." }
 {page_header_info}
 
-Make sure to read the [API Overview](../README.md) before reading this document.
+Make sure to read the [API Overview](https://www.codereadr.com/apidocs/README.md) before reading this document.
 *Note:* The API URL for generating barcodes is different from the normal API URL.
 ```
 https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY
