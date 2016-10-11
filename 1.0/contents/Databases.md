@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Databases</h1>
 
-Make sure to read the [API Overview](../README.md) before reading this document.
+Make sure to read the [API Overview](https://www.codereadr.com/apidocs/README.md) before reading this document.
 
 <a name="create"></a><h2>Creating a Database</h2>
 
@@ -10,7 +10,7 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>create</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_name | A string which specifies the name of your new database. |
 
 <h3>Optional Variables</h3>
