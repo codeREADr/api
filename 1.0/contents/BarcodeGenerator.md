@@ -20,7 +20,7 @@ https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_
 | -------- | ----------- |
 | section | Must be set to <code>barcode</code>. |
 | action | Must be set to <code>generate</code>. |
-| api_key | Must be set to [your unique API key][https://www.codereadr.com/apidocs/README.md#finding]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | value | A string which specifies your desired barcode value. Must be 100 characters or less. |
 
 <h3>Response</h3>
