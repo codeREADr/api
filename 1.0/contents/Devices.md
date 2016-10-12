@@ -46,7 +46,7 @@ After we receive these variables, we will respond with raw XML containing status
 | -------- | ----------- |
 | section | Must be set to <code>devices</code>. |
 | action | Must be set to <code>update</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | device_id | An integer which specifies the particular device ID you'd like to edit. |
 | device_name | A string which specifies what you'd like to rename the device you're editing. |
 
