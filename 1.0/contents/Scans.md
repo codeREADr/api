@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Scans</h1>
 
-Make sure to read the [API Overview](../README.md) before reading this document.
+Make sure to read the [API Overview](https://www.codereadr.com/apidocs/README.md) before reading this document.
 
 <a name="retrieve"></a><h2>Retrieving a List of Scans / Searching Scans</h2>
 
@@ -10,7 +10,7 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | --------- | ----------- |
 | section | Must be set to <code>scans</code>. |
 | action | Must be set to <code>retrieve</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 
 <h3>Optional Variables</h3>
 
@@ -119,7 +119,7 @@ After we receive these variables, we will respond with raw XML containing status
 | --------- | ----------- |
 | section | Must be set to <code>scans</code>. |
 | action | Must be set to <code>delete</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | scan_id | One or more integers specifying the scan(s) you would like to delete. When deleting multiple scans, please separate each integer with commas. |
 
 <h2>Response</h2>
