@@ -52,7 +52,7 @@ If the API request fails we will responde with XML.
 | -------- | ----------- |
 | section | Must be set to <code>barcode</code>. |
 | action | Must be set to <code>generate</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | value | A string which specifies your desired barcode value. Must be 100 characters or less. |
 
 <h3>Optional Variables</h3>
