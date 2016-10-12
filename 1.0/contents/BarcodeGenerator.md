@@ -31,7 +31,7 @@ If your API request is successful we will respond with the raw barcode image <i>
 
 ![ScreenShot](https://secure.codereadr.com/images/apidocs_standardbarcode.gif)
 
-If the API request fails we will responde with XML.
+If the API request fails we will respond with XML.
 
 *Failure Example*:
 ~~~ .xml
