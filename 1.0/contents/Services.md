@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Services</h1>
 
-Make sure to read the [API Overview](../README.md) before reading this document.
+Make sure to read the [API Overview](https://www.codereadr.com/apidocs/README.md) before reading this document.
 
 <a name="retrieve"></a><h2>Retrieving A Service List</h2>
 
@@ -10,7 +10,7 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | -------- | ----------- |
 | section | Must be set to <code>services</code>. |
 | action | Must be set to <code>retrieve</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 
 <h3>Optional Variables</h3>
 
@@ -59,7 +59,7 @@ After we receive these variables, we will respond with raw XML containing status
 | -------- | ----------- |
 | section | Must be set to <code>services</code>. |
 | action | Must be set to <code>create</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | validation_method | An enum type that specifies the service type you desire for your new service. You must set it to one of these options: <code>record</code>, <code>ondevicerecord</code>, <code>database</code>, <code>ondevicedatabase</code>, or <code>postback</code>. |
 * <code>record</code> (Record Scans Online)
 * <code>ondevicerecord</code> (Record Scans On-Device)
@@ -142,7 +142,7 @@ Variables omitted when editing a service will not affect their correspondent ser
 | -------- | ----------- |
 | section | Must be set to <code>services</code>. |
 | action | Must be set to <code>update</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | service_id | An integer which specifies the particular service you'd like to update. |
 
 <h3>Optional Variables</h3>
@@ -206,7 +206,7 @@ If your service is successfully edited after we receive these variables, we will
 | -------- | ----------- |
 | section | Must be set to <code>services</code>. |
 | action | Must be set to <code>delete</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | service_id | An integer which specifies the particular service you'd like to delete. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. |
 
 <h3>Response</h3>
@@ -232,7 +232,7 @@ If your service is successfully deleted after we receive these variables, we wil
 | -------- | ----------- |
 | section | Must be set to <code>services</code>. |
 | action | Must be set to <code>adduserpermission</code> or <code>revokeuserpermission</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | service_id | A string which specifies the particular services you'd like to authorize / de-authorize a user for. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. |
 | user_id | A string which specifies the user IDs that you wish to authorize / de-authorize for the specified services. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all users. |
 
@@ -259,7 +259,7 @@ If your users are successfully authorized / de-authorized for the specified serv
 | -------- | ----------- |
 | section | Must be set to <code>services</code>. |
 | action | Must be set to <code>addquestion</code> or <code>removequestion</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | service_id | A string which specifies the particular services you'd like to add / remove questions from. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all services. |
 | question_id | A string which specifies the question IDs that you wish to add / remove from the specified services. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to include all questions. |
 
