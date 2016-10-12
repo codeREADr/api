@@ -1,6 +1,6 @@
 <a name="head"></a><h1>API: Users</h1>
 
-Make sure to read the [API Overview](../README.md) before reading this document.
+Make sure to read the [API Overview](https://www.codereadr.com/apidocs/README.md) before reading this document.
 
 <a name="retrieve"></a><h2>Retrieving a List of Users</h2>
 
@@ -10,7 +10,7 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | --------- | ----------- |
 | section | Must be set to <code>users</code>. |
 | action | Must be set to <code>retrieve</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 
 <h3>Optional Variables</h3>
 
@@ -49,7 +49,7 @@ After we receive these variables, we will respond with raw XML containing status
 | --------- | ----------- |
 | section | Must be set to <code>users</code>. |
 | action | Must be set to <code>create</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | username | A string which specifies the name of your new user. We will return an error code if the username already exists in the system. |
 | password | A string which specifies the password of your new user. |
 
@@ -85,7 +85,7 @@ Variables omitted when editing a user will not affect the variable's corresponde
 | --------- | ----------- |
 | section | Must be set to <code>users</code>. |
 | action | Must be set to <code>update</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | user_id | An integer which specifies the user ID you wish to edit. |
 
 <h3>Optional Variables</h3>
@@ -119,7 +119,7 @@ If the user you specified is successfully edited after we receive these variable
 | --------- | ----------- |
 | section | Must be set to <code>users</code>. |
 | action | Must be set to <code>delete</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | user_id | An integer or set of integers which specify the user IDs you wish to delete. You can specify a single integer or a comma-separated list of integers (Examples: <code>1005</code> or <code>1005, 1010, 1254</code>). You can also use the keyword <code>all</code> to delete all users. |
 
 <h3>Response</h3>
@@ -145,7 +145,7 @@ If the users you specified are successfully deleted after we receive these varia
 | --------- | ----------- |
 | section | Must be set to <code>users</code>. |
 | action | Must be set to <code>validate</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | username | A string which specifies the username of the user to validate |
 | password | A string which specifies the password of the user to validate. |
 
@@ -180,7 +180,7 @@ After we receive these variables and if credentials are valid, we will respond w
 | --------- | ----------- |
 | section | Must be set to <code>users</code>. |
 | action | Must be set to <code>available</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | username | A string which specifies the username to check for availability. |
 
 <h3>Response</h3>
