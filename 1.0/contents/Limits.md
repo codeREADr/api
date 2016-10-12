@@ -2,7 +2,7 @@
 
 {page_header_info} { "title":"Limits for codeREADr API Documentation", "meta":"Learn how to retrieve your API limits with the required variables." } {page_header_info}
 
-Make sure to read the [API Overview](../README.md) before reading this document.
+Make sure to read the [API Overview](https://www.codereadr.com/apidocs/README.md) before reading this document.
 
 <a name="retrieve"></a><h2>Retrieving Your API Limits</h2>
 
@@ -12,7 +12,7 @@ Make sure to read the [API Overview](../README.md) before reading this document.
 | -------- | ----------- |
 | section | Must be set to <code>limits</code>. |
 | action | Must be set to <code>retrieve</code>. |
-| api_key | Must be set to [your unique API key](../README.md#finding). |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 
 <h3>Response</h3>
 
