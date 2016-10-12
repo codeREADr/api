@@ -87,7 +87,7 @@ If we successfully receive your variables, we will respond with raw XML containi
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>update</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database you want to rename. |
 | database_name | A string which specifies the new name of your database. |
 
@@ -114,7 +114,7 @@ If your database is successfully renamed, we will respond with raw XML containin
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>delete</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database you want to delete. |
 
 <h3>Response</h3>
@@ -140,7 +140,7 @@ If your database is successfully deleted, we will respond accordingly with raw X
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>clear</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database you want to clear. |
 
 <h3>Response</h3>
@@ -166,7 +166,7 @@ If your database is successfully cleared, we will respond with raw XML containin
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>showvalues</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database. |
 
 <h3>Optional Variables</h3>
@@ -215,9 +215,9 @@ You must use HTTP POST method to pass the csvfile.
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>upload</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database. |
-| csvfile | A CSV file. (Not the url to the file) For formatting guidelines, see [this page](https://codereadr.com/kb/content/5/17/en/creating-a-csv-file.html). |
+| csvfile | A CSV file. (Not the url to the file) For formatting guidelines, see [this page](http://www.codereadr.com/knowledgebase/creating-a-csv-file/). |
 
 <h3>Response</h3>
 
@@ -243,7 +243,7 @@ Click [here](https://www.codereadr.com/apidocs/examples/csv2db.html) to use a si
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>upsertvalue</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database. |
 | value | A string which specifies the barcode value. Must be 100 characters or less. |
 
@@ -277,7 +277,7 @@ This action allows you to update your database without first checking the state 
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>addvalue</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database. |
 | value | A string which specifies the barcode value. Must be 100 characters or less. |
 
@@ -311,7 +311,7 @@ If your barcode value is successfully added, we will respond accordingly with ra
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>editvalue</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database. |
 | value | A string which specifies the barcode value. Must be 100 characters or less. |
 
@@ -345,7 +345,7 @@ If your barcode response text and/or validity is successfully edited, we will re
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>deletevalue</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database. |
 | value | A string which specifies the barcode value. Must be 100 characters or less. |
 
