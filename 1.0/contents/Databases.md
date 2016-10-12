@@ -43,7 +43,7 @@ If your database is successfully created, we will respond with raw XML containin
 | -------- | ----------- |
 | section | Must be set to <code>databases</code>. |
 | action | Must be set to <code>retrieve</code>. |
-| api_key | Must be set to [your unique API key][1]. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 
 <h3>Optional Variables</h3>
 
