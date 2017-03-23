@@ -7,7 +7,7 @@
 
 Developers! Want to embed codeREADr into your own application? Use our API to integrate our functionality into your software. Make sure to read this document before you get started. 
 
-Note: Use of our API is only available for accounts with a [Paid Plan] (http://www.codereadr.com/knowledgebase/api-pricing-and-limits/).
+Note: Use of our API is only available for accounts with a [Paid Plan] (https://www.codereadr.com/knowledgebase/api-pricing-and-limits/).
 
 <h6 name='BeginToCDONOTREMOVE'></h6>
 <span name='foo' />
@@ -15,8 +15,8 @@ Note: Use of our API is only available for accounts with a [Paid Plan] (http://w
 <a name="toc"></a><h1>Table of Contents</h1>
 
 * Overview
-    * [Finding Your API Key](#finding)
-    * [Submitting Variables](#submitting)
+    * [Finding Your API Key](/#finding)
+    * [Submitting Variables](/#submitting)
 * [Postback + Direct Scan to URL (DSU)](contents/Postback.md#head)
     * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
     * [DSU Benefits](contents/Postback.md#benefits)
