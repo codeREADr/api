@@ -1,10 +1,10 @@
 <a name="head"></a><h1>Postback and Direct Scan to URL (DSU)</h1>
 
-Postback URLs are used to relay data from codeREADr to the URL of your choice. This is one of codeREADr's most valuable features. [We know of IT companies and independent developers who have created new services and even businesses based on this codeREADr feature.] 
+Postback URLs are used to relay data from codeREADr to the URL of your choice. This is one of our most valuable features.
 
 <a name="default-direct"></a><h2>Default Postback URL vs. Direct Scan to URL (DSU)</h2>
 
-When using our default Postback URL service  type, data goes from the scanning device to codeREADr's servers and then gets relayed to your postback URL. This allows us to store the data for use with our managing features such as history review and filtered data exporting. Postback URL also offer the benefit of batch scan upload from the device in cases where internet connectivity is lost. However, we also provide an option to bypass our servers and scan directly to your URL - it's called Direct Scan to URL (DSU). 
+When using our default <b>Postback URL</b> service  type, data goes from the scanning device to codeREADr's servers and then gets relayed to your postback URL. This allows us to store the data and provide you with data management features such as history review and filtered data exporting. Postback URL services also supports offline scanning and "batch scan upload" from the device in cases where internet connectivity is lost. When using our <b>Direct Scan to URL (DSU)</b> service type your scans will bypass our servers and scan directly to your URL. 
 
 [Back to Top](#head)
 
@@ -31,7 +31,7 @@ Note: If required, with DSU you will have to create your own history URL for in-
 | answers | An array of corresponding answers with numeric question IDs as indices. This variable is only sent if service contains data collection questions. In case of multiple answers given, they are separated by a delimiter, which is <code>&#124;^&#124;</code>, so you can split by it. |
 | *property names* | The scan property variables posted depend on the configuration of your service. A few existing scan property variables are ```capture_type``` (i.e. camera scan, manual entry, value lookup), ```time_zone``` (of the device), ```gps_location``` (background location collection).|
 
-These variables are sent via HTTP POST with every scan. Grabbing these results may vary from language to language, so we suggest looking up how to capture POST variables if you do not know how to do so.
+These variables are sent via HTTP POST with every scan. Processing these results may vary with different programming languages, so we suggest looking up how to capture POST variables if you do not know how to do so.
 
 [Back to Top](#head)
 
