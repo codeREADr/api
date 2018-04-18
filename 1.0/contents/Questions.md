@@ -56,7 +56,9 @@ Make sure to read the [API Overview](https://www.codereadr.com/apidocs/README.md
 | question_type | An enum type which specifies the type of question you want to create. If not specified the question type defaults to <code>manual</code>. See the list below for available question types.|
 
 <h5><code>question_type</code> List</h5>
-_Note: To make questions of certain types usable (e.g. `checkbox`, `dropdown`, `webcollect`), you must use the question id returned in the result to <a href="#add">add answer option(s)</a> to your question._
+
+Note: To make questions of certain types usable (e.g. `checkbox`, `dropdown`, `webcollect`), you must use the question id returned in the result to <a href="#add">add answer option(s)</a> to your question.
+
 * **`checkbox`** will create a Multiple Choice (Multiple Answer) question. The user will be able to choose as many of the answer options as you add to the question. _<a href="#add">Requires answer options.</a>_
 * **`datasignature`** will allow the user to collect signature images.
 * **`dropboximage`** will prompt the user to take a photo or choose one from their device's gallery. 
