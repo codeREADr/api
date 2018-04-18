@@ -1,6 +1,6 @@
 <a name="head"></a><h1>Postback and Direct Scan to URL (DSU)</h1>
 
-Postback URLs are used to relay data from codeREADr to the URL of your choice. This is one of our most valuable features.
+A postback URL is used to relay data from codeREADr to the URL of your choice. This is one of our most valuable features.
 
 <a name="default-direct"></a><h2>Default Postback URL vs. Direct Scan to URL (DSU)</h2>
 
@@ -27,7 +27,7 @@ Note: If required, with DSU you will have to create your own history URL for in-
 | sid  | The numeric ID of the service the scan was made under. |
 | udid | The unique device ID of the scanner. |
 | userid | The numeric ID of the user who performed the scan. |
-| questions | An array of question texts with numeric question IDs as indices. This variable is only sent if the service contains data collection questions. *Note: Only regular Postback services receive this variable, DSU services only receive the answers variable.* |
+| questions | An array of question texts with numeric question IDs as indices. This variable is only sent if the service contains data collection questions. Note: Only regular Postback services receive this variable, DSU services only receive the answers variable. |
 | answers | An array of corresponding answers with numeric question IDs as indices. This variable is only sent if service contains data collection questions. In case of multiple answers given, they are separated by a delimiter, which is <code>&#124;^&#124;</code>, so you can split by it. |
 | *property names* | The scan property variables posted depend on the configuration of your service. A few existing scan property variables are ```capture_type``` (i.e. camera scan, manual entry, value lookup), ```time_zone``` (of the device), ```gps_location``` (background location collection).|
 
