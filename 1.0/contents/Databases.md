@@ -231,7 +231,7 @@ If your CSV file is successfully imported, we will respond accordingly with raw 
     <status>1</status>
 </xml>
 ```
-Click [here](https://www.codereadr.com/apidocs/examples/csv2db.html) to use a simple HTML form that imports the entries of a CSV file into a specified codeREADr database.
+[Here is an example of a simple HTML form](https://www.codereadr.com/apidocs/examples/csv2db.html) that imports the entries of a CSV file into a specified CodeREADr database.
 
 [Back to Top](#head)
 
