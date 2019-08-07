@@ -7,8 +7,8 @@ Error codes generated when performing an API action will display in the <b><stat
 ~~~ .xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
-    <status>1</status>
-    <id>1001</id>
+    <status>0</status>
+    <error code="120">Invalid section parameter</error>
 </xml>
 ~~~
 
@@ -25,10 +25,10 @@ Error codes generated when performing an API action will display in the <b><stat
 | 103 |    The XML file contains errors and cannot be read. |
 | 104 |    No file has been received. Try specifying MAX_FILE_SIZE=1000000before submitting the file. |
 | 105 |    The file is larger than allowed. |
-| 110 |    Invalid action Parameter |
+| 110 |    Invalid action parameter |
 | 111 |    You have exceeded the number of permitted API calls during current minute. The counter is reset at the beginning of every minute. |
 | 113 |    You have exceeded the number of permitted API calls during current day. The counter is reset every midnight. |
-| 120 |    Invalid section Parameter |
+| 120 |    Invalid section parameter |
 | 131 |    Missing required variable: service_id |
 | 132 |    Missing required variable: user_id |
 | 133 |    Missing required variable: question_id |
