@@ -1,4 +1,3 @@
-<!-- <iosheight>75</iosheight> -->
 <html>
 <head>
 <title>Zip Code Question</title>
@@ -10,7 +9,7 @@
 
  // The app calls this to overwrite the current answer with a saved answer.
  function setAnswerForCR(the_answer) {
-    document.getElementById("zipcode").value = the_answer;
+    document.getElementById("zipcode").value = the_answer.trim();
  }
 
  // Sends the answer to the app. It should be called anytime the answer changes.
