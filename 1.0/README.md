@@ -1,13 +1,13 @@
 <a name="head"></a><h1>Overview</h1>
 
 {page_header_info}
-{ "title":"Embed codeREADr into your own application",
-  "meta":"Learn how to use our API to integrate our functionality into your software" }
+{ "title":"API Documentation - Overview",
+  "meta":"Overview of API integration with CodeREADr" }
 {page_header_info}
 
-Developers! Want to embed codeREADr into your own application? Use our API to integrate our functionality into your software. Make sure to read this document before you get started. 
+These API docs are for the development teams who want to programatically configure their CodeREADr account or retrieve their scan data.  Make sure to read this document before you get started. 
 
-Note: Use of our API is only available for accounts with a [Paid Plan] (https://www.codereadr.com/knowledgebase/api-pricing-and-limits/).
+Note: Use of our API is only available for accounts with a Paid Plan (https://www.codereadr.com/knowledgebase/api-pricing-and-limits/).
 
 <h6 name='BeginToCDONOTREMOVE'></h6>
 <span name='foo' />
