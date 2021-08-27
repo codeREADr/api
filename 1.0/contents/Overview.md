@@ -2,7 +2,7 @@
 
 <a name="finding"></a><h2>Finding Your API Key</h2>
 
-A valid API key is required for any site functions performed through our API. To locate your API key, sign into CodeREADr.com or create an account. Once authenticated, your API key is located or can be generated on this page https://secure.codereadr.com/account/api/key.
+A valid API key is required for any site functions performed through our API. To locate your API key, sign into CodeREADr.com or create an account. Once signed in your API key can be located or generated on this page https://secure.codereadr.com/account/api/key.
 
 <a href="#head">Back to Top</a>
 
