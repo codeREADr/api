@@ -60,12 +60,13 @@ After we receive these variables, we will respond with raw XML containing status
 | section | Must be set to <code>services</code>. |
 | action | Must be set to <code>create</code>. |
 | api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
-| validation_method | An enum type that specifies the service type you desire for your new service. You must set it to one of these options: <code>record</code>, <code>ondevicerecord</code>, <code>database</code>, <code>ondevicedatabase</code>, or <code>postback</code>. |
+| validation_method | An enum type that specifies the service type you desire for your new service. You must set it to one of these options: <code>record</code>, <code>ondevicerecord</code>, <code>database</code>, <code>ondevicedatabase</code>, <code>webview</code>, or <code>postback</code>. |
 * <code>record</code> (Record Scans Online)
 * <code>ondevicerecord</code> (Record Scans On-Device)
 * <code>database</code> (Validate Scans Online)
 * <code>ondevicedatabase</code> (Validate Scans On-Device)
 * <code>postback</code> ([Postback URL](Postback.md#head))
+* <code>webview</code> (View Web Content (no scanning))
 
 If <b>validation_method</b> is set to <code>database</code> or <code>ondevicedatabase</code>:
 
@@ -78,6 +79,12 @@ If <b>validation_method</b> is set to <code>postback</code>:
 | Variable | Description |
 | -------- | ----------- |
 | postback_url | A string which must be included and set to the destination URL where all scans will be forwarded to. ([More info.](Postback.md#head)) |
+
+If <b>validation_method</b> is set to <code>webview</code>:
+
+| Variable | Description |
+| -------- | ----------- |
+| description | A string which specifies the web content to display. Set to a URL like this ```<curl>https://www.example.com/page.html</curl>``` or HTML code directly i.e. ```<html>...</html>```.<br>Note: including attributes in the opening html tag (i.e. ```<html lang="en">```) is currently not allowed. |
 
 <h3>Optional Variables</h3>
 
