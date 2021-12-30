@@ -72,7 +72,8 @@ DSU Response: In order to pass a success or failure message back to the device, 
 
 If you return <strong>&lt;html&gt;...&lt;/html&gt;</strong> code in the <strong>&lt;text&gt;…&lt;/text&gt;</strong> node then in the app the response area will display as html instead of plain text. Please note that in the example below the HTML is XML escaped because it's not part of the defined XML response format. It's just content being returned in the defined <strong>text</strong> node.
 
-```<?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <xml>
     <message>
         <status>1</status>
@@ -91,7 +92,8 @@ If you return <strong>&lt;html&gt;...&lt;/html&gt;</strong> code in the <strong>
 
 If you return <strong>&lt;curl&gt;YOUR URL&lt;/curl&gt;</strong> in the <strong>&lt;text&gt;…&lt;/text&gt;</strong> node then in the app the response area will load your URL in a web view instead of display as plain text. Please note that in the example below the &lt;curl&gt;...&lt;/curl&gt; tag is XML escaped because it's just content being returned in the defined <strong>text</strong> node.
 
-```<?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <xml>
     <message>
         <status>1</status>
@@ -112,5 +114,13 @@ All special XML entities must be encoded. If you see the message below, your res
 ```
 XML Parsing Error: not well-formed
 ```
+
+[Back to Top](#head)
+
+<a name="extras"></a><h2>Related Links</h2>
+- [CodeREADr server IPs to whitelist](https://secure.codereadr.com/account/integrations/postback) _(requires login)_
+- [KB - Postback URL and DSU Variables](https://www.codereadr.com/knowledgebase/postback-url-and-dsu-variables/)
+- [KB - Postback URL](https://www.codereadr.com/knowledgebase/postback-url/)
+- [KB - Direct Scan to URL (DSU)](https://www.codereadr.com/knowledgebase/direct-scan-url/)
 
 [Back to Top](#head)
