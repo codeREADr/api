@@ -248,7 +248,7 @@ curl -F section=databases -F action=upload -F database_id=YOUR_DB_ID -F api_key=
 
 *HTML Form Example*:
 
-```
+```html
 <html><body>
     <form action="https://api.codereadr.com/api/" enctype="multipart/form-data" method="POST">
       <input name="api_key" placeholder="YOUR_API_KEY" type="text"> <br/>
