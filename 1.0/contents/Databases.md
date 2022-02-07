@@ -207,7 +207,7 @@ We will respond with raw XML containing a status of <code>1</code>, results coun
 
 <a name="upload"></a><h2>Uploading a CSV File to a Database</h2>
 
-You must use HTTP POST method to pass the csvfile. 
+<b>NOTE:</b> This API is a HTTP multipart/form-data POST request to submit normal variables i.e. `section`, `action`, etc and the actual CSV data file under the param `csvfile`. 
 
 <h3>Required Variables</h3>
 
@@ -217,7 +217,13 @@ You must use HTTP POST method to pass the csvfile.
 | action | Must be set to <code>upload</code>. |
 | api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
 | database_id | An integer which specifies the numeric ID of the database. |
-| csvfile | A CSV file. (Not the url to the file) For formatting guidelines, see [this page](http://www.codereadr.com/knowledgebase/creating-a-csv-file/). |
+| csvfile | A CSV file as part of a multipart/form-data POST. (Not the url to the file) For formatting guidelines, see [this page](https://www.codereadr.com/knowledgebase/creating-a-database/). |
+
+<h3>Optional Variables</h3>
+
+| Variable | Description |
+| -------- | ----------- |
+| is_deferred | Set to `1` to asynchronous import your CSV file. This is recommended for uploads of more than 10,000 values. |
 
 <h3>Response</h3>
 
@@ -231,7 +237,31 @@ If your CSV file is successfully imported, we will respond accordingly with raw 
     <status>1</status>
 </xml>
 ```
-[Here is an example of a simple HTML form](https://www.codereadr.com/apidocs/examples/csv2db.html) that imports the entries of a CSV file into a specified CodeREADr database.
+
+<h3>API Request Examples</h3>
+
+*Curl Command Example*:
+
+```
+curl -F section=databases -F action=upload -F database_id=YOUR_DB_ID -F api_key=YOUR_API_KEY -F csvfile=@./YOUR_LOCAL_FILE.csv https://api.codereadr.com/api/
+```
+
+*HTML Form Example*:
+
+```
+<html><body>
+    <form action="https://api.codereadr.com/api/" enctype="multipart/form-data" method="POST">
+      <input name="api_key" placeholder="YOUR_API_KEY" type="text"> <br/>
+      <input name="section" type="hidden" value="databases">
+      <input name="action" type="hidden" value="upload">
+      <input name="database_id" type="text" placeholder="YOUR_DATABASE_ID">  <br/>
+      Choose <i>csvfile</i> <input name="csvfile" type="file">  <br/>
+      <input type="submit" value="Import CSV File Into My Database">
+    </form>
+</body></html>
+```
+
+[Link to simple HTML form](https://secure.codereadr.com/apidocs/examples/csv2db.html) that imports the entries of a CSV file into a specified CodeREADr database.
 
 [Back to Top](#head)
 
