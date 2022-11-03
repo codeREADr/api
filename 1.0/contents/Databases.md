@@ -223,6 +223,7 @@ We will respond with raw XML containing a status of <code>1</code>, results coun
 
 | Variable | Description |
 | -------- | ----------- |
+| trim_value | Set to `1` to trim or `0` to _not trim_ value white space. Defaults to `1`. |
 | is_deferred | Set to `1` to asynchronous import your CSV file. This is recommended for uploads of more than 10,000 values. |
 
 <h3>Response</h3>
@@ -263,6 +264,76 @@ curl -F section=databases -F action=upload -F database_id=YOUR_DB_ID -F api_key=
 
 [Link to simple HTML form](https://secure.codereadr.com/apidocs/examples/csv2db.html) that imports the entries of a CSV file into a specified CodeREADr database.
 
+
+[Back to Top](#head)
+
+<a name="upsertmultivalue"></a><h2>Inserting or Updating Multiple Barcodes</h2>
+
+The <code>upsertmultivalue</code> action allows you to specify up to 100 database values to insert/update as without having to upload a CSV file like you do with the <code>upload</code> action. It's also more flexible than the <code>upload</code> action. You can choose to specify some variables *globally* that will apply to all values in the request but also specify some variables locally to specific values in the request. This means in the same request you can insert/update values to multiple databases. Locally specifying value variables follows the array syntax ```values[0][VARIABLE]``` to ```values[99][VARIABLE]```.
+
+- When a value does not specify it's own local `values[i][database_id]` or `values[i][trim_value]`, the setting falls back to the *global* variable (`database_id` or `trim_value`) if it was specified. 
+- The value will be ignored if no local or global `database_id` is specified.
+- `trim_value` will default to `1` if  no local or global `trim_value` is specified.
+
+<h3>Required Variables</h3>
+
+| Variable | Description |
+| -------- | ----------- |
+| section | Must be set to <code>databases</code>. |
+| action | Must be set to <code>upsertmultivalue</code>. |
+| api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
+| values | An array of up to 100 database values. |
+| values[i]\[value] | A string specifying the barcode value that must be 100 characters or less. ```i``` is the index in the values array. |
+
+<h3>Optional Variables</h3>
+
+| Variable | Description |
+| -------- | ----------- |
+| database_id&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; | An integer which specifies the numeric ID of the database. Will apply to all values that do not have the local variable set via ```values[i][database_id]```. |
+| trim_value | Set to `1` to trim or `0` to _not trim_ value white space. Defaults to `1`. This option applies to all values that do not have the local variable set via ```values[i][trim_value]```. |
+| values[i]\[database_id] | An integer which specifies the numeric ID of the database. Only applies to ```value[i]``` and not all values in the array. |
+| values[i]\[trim_value] | Set to `1` to trim or `0` to _not trim_ value white space. Only applies to ```value[i]``` and not all values in the array. |
+| values[i]\[response] | A string which specifies the barcode value's associated response text. |
+| values[i]\[validity] | A boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Set to <code>1</code> (valid) by default. |
+
+<h3>Response</h3>
+
+This action allows you to update your database without first checking the state of the value. If your barcode value is successfully inserted or updated to match your request options, will respond accordingly with raw XML containing a status of <code>1</code>.
+
+*Example*:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <status>1</status>
+</xml>
+```
+
+<h3>Example Specifying Variables with XML</h3>
+
+```xml
+<xml>
+   <action>upsertmultivalue</action>
+   <api_key>API_KEY</api_key>
+   <database_id>DB_ID</database_id>
+   <section>databases</section>
+   <trim_value>1</trim_value>
+   <values>
+      <database_id>36156</database_id>
+      <message>Thank you!</message>
+      <validity>1</validity>
+      <value>ABC</value>
+   </values>
+   <values>
+      <database_id>36156</database_id>
+      <message>Hello world!</message>
+      <trim_value>0</trim_value>
+      <validity>1</validity>
+      <value>  spaces  </value>
+   </values>
+</xml>
+```
+
 [Back to Top](#head)
 
 <a name="upsertvalue"></a><h2>Inserting or Updating a Barcode</h2>
@@ -283,6 +354,7 @@ curl -F section=databases -F action=upload -F database_id=YOUR_DB_ID -F api_key=
 | -------- | ----------- |
 | response | A string which specifies the barcode value's associated response text. |
 | validity | A boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Set to <code>1</code> (valid) by default. |
+| trim_value | Set to `1` to trim or `0` to _not trim_ value white space. Defaults to `1`. |
 
 <h3>Response</h3>
 
@@ -317,6 +389,7 @@ This action allows you to update your database without first checking the state 
 | -------- | ----------- |
 | response | A string which specifies the barcode value's associated response text. |
 | validity | A boolean type which specifies the validity of the barcode. Input <code>0</code> and the new barcode value will be treated as invalid whenever it is scanned. Set to <code>1</code> (valid) by default. |
+| trim_value | Set to `1` to trim or `0` to _not trim_ value white space. Defaults to `1`. |
 
 <h3>Response</h3>
 
