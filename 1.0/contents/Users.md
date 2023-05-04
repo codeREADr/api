@@ -171,7 +171,7 @@ After we receive these variables and if credentials are valid, we will respond w
 ~~~
 
 [Back to Top](#head)
-
+<!---
 <a name="available"></a><h2>Username Availability</h2>
 
 <h3>Required Variables</h3>
@@ -197,3 +197,4 @@ After we receive these variables we will respond with raw XML containing status 
 ~~~
 
 [Back to Top](#head)
+-->
