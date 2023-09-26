@@ -78,11 +78,11 @@ If you return <strong>&lt;html&gt;...&lt;/html&gt;</strong> code in the <strong>
     <message>
         <status>1</status>
         <text>
-&lt;html&gt;
-   &lt;body&gt;
-      &lt;h1&gt;Hello World!&lt;/h1&gt;
-   &lt;/body&gt;
-&lt;/html&gt;
+<![CDATA[<html>
+   <body>
+      <h1>Hello World!</h1>
+   </body>
+</html>]]>
         </text>
     </message>
 </xml>
@@ -98,7 +98,7 @@ If you return <strong>&lt;curl&gt;YOUR URL&lt;/curl&gt;</strong> in the <strong>
     <message>
         <status>1</status>
         <text>
-&lt;curl&gt;https://www.example.com/hello.html&lt;/curl&gt;
+<![CDATA[<curl>https://www.example.com/hello.html</curl>]]>
         </text>
     </message>
 </xml>
