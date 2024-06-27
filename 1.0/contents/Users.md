@@ -50,8 +50,8 @@ After we receive these variables, we will respond with raw XML containing status
 | section | Must be set to <code>users</code>. |
 | action | Must be set to <code>create</code>. |
 | api_key | Must be set to [your unique API key](https://www.codereadr.com/apidocs/README.md#finding). |
-| username | A string which specifies the name of your new user. We will return an error code if the username already exists in the system. |
-| password | A string which specifies the password of your new user. |
+| username | A string that specifies the identifying name of the new user. <br> Note: If the '__username__' is an email address, the '__password__' variable is ignored because the user will be required to set their own password.|
+| password | _(Conditionally Required)_ A string that specifies the password for the new user. <br> Note: If the username is __not__ an email address, the '__password__' variable is required.|
 
 <h3>Optional Variables</h3>
 
@@ -61,7 +61,7 @@ After we receive these variables, we will respond with raw XML containing status
 
 <h3>Response</h3>
 
-If a new user is successfully created after we receive these variables, we will respond with raw XML containing a status of <code>1</code> and your new user's ID.
+If a new user is successfully created after receiving your request, we will respond with raw XML containing a status of <code>1</code> and the new user's ID. Additionally, if the username is an email address, an invitation email will be sent to the user. The user will only be able to log in and use the system after accepting the invitation.
 
 *Example*:
 
