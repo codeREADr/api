@@ -17,6 +17,10 @@ Note: Use of our API is only available for accounts with a Paid Plan (https://ww
 * Overview
     * [Finding Your API Key](/#finding)
     * [Submitting Variables](/#submitting)
+    * [GET (URL Query) (Disabled by Default for Security)](/#get)
+    * [POST (Form Encoded) (Recommended)](/#post)
+    * [POST (XML File)](/#postxmlfile)
+    * [POST (XML String)](/#postxmlstring)
 * [Postback + Direct Scan to URL (DSU)](contents/Postback.md#head)
     * [Default Postback URL vs. Direct Scan to URL](contents/Postback.md#default-direct)
     * [DSU Benefits](contents/Postback.md#benefits)
@@ -76,86 +80,183 @@ Note: Use of our API is only available for accounts with a Paid Plan (https://ww
 
 A valid API key is required for any site functions performed through our API. To locate your API key, [sign into CodeREADr.com](https://secure.codereadr.com/signin/) or [create an account](https://secure.codereadr.com/registration/). Once signed in your API key can be located or generated on the API Keys page under Account Settings (https://secure.codereadr.com/account/api/key).
 
-<a href="#head">Back to Top</a>
-
 <a name="submitting"></a><h2>Submitting Variables</h2>
 
 The codeREADr API is located at:
 
-* https://api.codereadr.com/api/
-* https://barcode.codereadr.com/api/  &nbsp;&nbsp;&nbsp; *(Barcode Generator API)*
+* `https://api.codereadr.com/api/`
+* `https://barcode.codereadr.com/api/` &nbsp;&nbsp;&nbsp; *(Barcode Generator API)*
 
 Every function performed through the API requires at least these three variables to be submitted:
 
-| Variable | Description |
-| -------- | ----------- |
-| section | A string specifying the section of your account you wish to configure. |
-| action | A string specifying the action you wish to perform on that area. |
-| api_key | A string with your unique API key. |
+| Variable  | Description                                                              |
+| --------- | ------------------------------------------------------------------------ |
+| `section` | A string specifying the section of your account you wish to configure.     |
+| `action`  | A string specifying the action you wish to perform on that area.          |
+| `api_key` | A string with your unique API key. **For security reasons, including the `api_key` directly in the URL via GET requests is strongly discouraged and GET requests are not enabled by default.** Please [contact our support team](https://www.codereadr.com/contact/) to request temporary GET access for testing purposes only. For production environments, we recommend using POST requests. |
 
+You can submit variables using the following methods:
 
+<a href="#head">Back to Top</a>
 
-You can submit variables in one of four different ways:
+<a name="get"></a>**GET (URL Query) (Disabled by Default for Security)**
 
-* <b>GET</b>
+> **Important:** For security reasons, including your `api_key` in the URL is not recommended. **GET requests are disabled by default.** To enable GET requests for testing purposes only, please [contact our support team](https://www.codereadr.com/contact/).
 
-The easiest and most direct method. Just attach variables to the URL.
+> *Default API Example (GET - Disabled by Default)*:
+>
+> ```
+> [https://api.codereadr.com/api/?section=SECTION_VARIABLE&action=ACTION_VARIABLE&api_key=YOUR_API_KEY](https://api.codereadr.com/api/?section=SECTION_VARIABLE&action=ACTION_VARIABLE&api_key=YOUR_API_KEY)
+> ```
+>
+> *Barcode Generator API Example (GET - Disabled by Default)*:
+>
+> ```
+> [https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY](https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY)
+> ```
 
-*Default API Example*:
+<a href="#head">Back to Top</a>
 
-```
-https://api.codereadr.com/api/?section=SECTION_VARIABLE&action=ACTION_VARIABLE&api_key=YOUR_API_KEY
-```
+<a name="post"></a>**POST (Form Encoded) (Recommended)**
 
-*Barcode Generator API Example*:
+We recommend using the POST method to submit your API key securely. Variables can be sent in the `application/x-www-form-urlencoded` format in the request body.
 
-```
-https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY
-```
+***Example using `curl`:***
 
-* <b>POST</b>
+~~~ .sh
+curl -X POST \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "api_key=YOUR_API_KEY&section=SECTION_VARIABLE&action=ACTION_VARIABLE" \
+     [https://api.codereadr.com/api/](https://api.codereadr.com/api/)
+~~~
 
-Create an HTML file formatted like the example below, insert your variables and open the file in your browser to send your variables.
+***Example using Python (with `requests` library):***
 
-*Example*:
+~~~ .py
+import requests
+
+url = "[https://api.codereadr.com/api/](https://api.codereadr.com/api/)"
+data = {
+    "api_key": "YOUR_API_KEY",
+    "section": "SECTION_VARIABLE",
+    "action": "ACTION_VARIABLE"
+}
+
+response = requests.post(url, data=data)
+print(response.text)
+~~~
+
+***Example using Node.js (with `node-fetch` library):***
+
+~~~ .js
+const fetch = require('node-fetch');
+
+const url = "[https://api.codereadr.com/api/](https://api.codereadr.com/api/)";
+const data = new URLSearchParams();
+data.append('api_key', 'YOUR_API_KEY');
+data.append('section', 'SECTION_VARIABLE');
+data.append('action', 'ACTION_VARIABLE');
+
+fetch(url, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/x-www-form-urlencoded',
+  },
+  body: data,
+})
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.error('Error:', error));
+~~~
+
+***Example using Java (with `java.net.http`):***
+
+~~~ .java
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+import java.net.URLEncoder;
+import java.io.IOException;
+
+public class ApiRequest {
+    public static void main(String[] args) throws IOException, InterruptedException {
+        String url = "[https://api.codereadr.com/api/](https://api.codereadr.com/api/)";
+        String apiKey = "YOUR_API_KEY";
+        String section = "SECTION_VARIABLE";
+        String action = "ACTION_VARIABLE";
+
+        String formData = URLEncoder.encode("api_key", StandardCharsets.UTF_8) + "=" + URLEncoder.encode(apiKey, StandardCharsets.UTF_8) +
+                          "&" + URLEncoder.encode("section", StandardCharsets.UTF_8) + "=" + URLEncoder.encode(section, StandardCharsets.UTF_8) +
+                          "&" + URLEncoder.encode("action", StandardCharsets.UTF_8) + "=" + URLEncoder.encode(action, StandardCharsets.UTF_8);
+
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(url))
+                .header("Content-Type", "application/x-www-form-urlencoded")
+                .POST(HttpRequest.BodyPublishers.ofString(formData))
+                .build();
+
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println(response.body());
+    }
+}
+~~~
+
+***Example using HTML Form:***
+
+Create an HTML file formatted like the example below, insert your variables, and open the file in your browser to send your variables.
 
 ~~~ .html
 <html>
-    <form method="POST" action="https://api.codereadr.com/api/">
-        <input type="text" name="api_key" value="YOUR_API_KEY"/>
-        <input type="text" name="section" value="SECTION_VARIABLE"/>
-        <input type="text" name="action" value="ACTION_VARIABLE"/>
-        <input type="submit"/>
-    </form>
+  <form method="POST" action="https://api.codereadr.com/api/">
+    <input type="hidden" name="api_key" value="YOUR_API_KEY"/>
+    <input type="text" name="section" value="SECTION_VARIABLE"/>
+    <input type="text" name="action" value="ACTION_VARIABLE"/>
+    <input type="submit"/>
+  </form>
 </html>
 ~~~
 
-* <b>XML File</b>
+<a href="#head">Back to Top</a>
 
-Build an XML file to post to https://api.codereadr.com/api/ . Only one file can be submitted - if you submit several files, only one will be processed and the rest ignored.
+<a name="postxmlfile"></a>**POST (XML File)**
+
+Build an XML file to post to `https://api.codereadr.com/api/`. Only one file can be submitted - if you submit several files, only one will be processed and the rest ignored. The `Content-Type` for this request should be `application/xml`.
 
 *Example*:
 
 ~~~ .xml
 <xml>
-    <section>SECTION_VARIABLE</section>
-    <action>ACTION_VARIABLE</action>
-    <api_key>YOUR_API_KEY</api_key>
+  <section>SECTION_VARIABLE</section>
+  <action>ACTION_VARIABLE</action>
+  <api_key>YOUR_API_KEY</api_key>
 </xml>
 ~~~
 
-* <b>XML String</b>
+***Example using `curl` to send an XML file:***
 
-You can also build an XML string, assign it to the variable named xml and either send it via GET or POST.
+~~~ .sh
+curl -X POST \
+     -H "Content-Type: application/xml" \
+     -d "@your_file.xml" \
+     [https://api.codereadr.com/api/](https://api.codereadr.com/api/)
+~~~
 
-*Example*:
+<a href="#head">Back to Top</a>
 
-~~~ .xml
-<xml>
-    <section>SECTION_VARIABLE</section>
-    <action>ACTION_VARIABLE</action>
-    <api_key>YOUR_API_KEY</api_key>
-</xml>
+<a name="postxmlstring"></a>**POST (XML String)**
+
+You can also build an XML string, assign it to the variable named `xml`, and either send it via POST. **Sending XML strings via GET is not recommended due to potential URL length limitations and the security concerns mentioned earlier.**
+
+***Example using POST with XML String:***
+
+~~~ .sh
+curl -X POST \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "xml=<xml><section>SECTION_VARIABLE</section><action>ACTION_VARIABLE</action><api_key>YOUR_API_KEY</api_key></xml>" \
+     [https://api.codereadr.com/api/](https://api.codereadr.com/api/)
 ~~~
 
 After the API receives the request, it responds with raw XML containing either a success status and requested information, or a failure status and an error description.
