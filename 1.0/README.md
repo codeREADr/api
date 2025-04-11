@@ -97,9 +97,9 @@ Every function performed through the API requires at least these three variables
 
 You can submit variables using the following methods:
 
-<a href="#head">Back to Top</a>
+<a name="get"></a><a href="#head">Back to Top</a>
 
-<a name="get"></a>**GET (URL Query) (Disabled by Default for Security)**
+**GET (URL Query) (Disabled by Default for Security)**
 
 > **Important:** For security reasons, including your `api_key` in the URL is not recommended. **GET requests are disabled by default.** To enable GET requests for testing purposes only, please [contact our support team](https://www.codereadr.com/contact/).
 
@@ -115,9 +115,9 @@ You can submit variables using the following methods:
 > [https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY](https://barcode.codereadr.com/api/?section=barcode&action=generate&api_key=YOUR_API_KEY)
 > ```
 
-<a href="#head">Back to Top</a>
+<a name="post"></a><a href="#head">Back to Top</a>
 
-<a name="post"></a>**POST (Form Encoded) (Recommended)**
+**POST (Form Encoded) (Recommended)**
 
 We recommend using the POST method to submit your API key securely. Variables can be sent in the `application/x-www-form-urlencoded` format in the request body.
 
@@ -219,9 +219,9 @@ Create an HTML file formatted like the example below, insert your variables, and
 </html>
 ~~~
 
-<a href="#head">Back to Top</a>
+<a name="postxmlfile"><a href="#head">Back to Top</a>
 
-<a name="postxmlfile"></a>**POST (XML File)**
+</a>**POST (XML File)**
 
 Build an XML file to post to `https://api.codereadr.com/api/`. Only one file can be submitted - if you submit several files, only one will be processed and the rest ignored. The `Content-Type` for this request should be `application/xml`.
 
@@ -244,9 +244,9 @@ curl -X POST \
      [https://api.codereadr.com/api/](https://api.codereadr.com/api/)
 ~~~
 
-<a href="#head">Back to Top</a>
+<a name="postxmlstring"><a href="#head">Back to Top</a>
 
-<a name="postxmlstring"></a>**POST (XML String)**
+</a>**POST (XML String)**
 
 You can also build an XML string, assign it to the variable named `xml`, and either send it via POST. **Sending XML strings via GET is not recommended due to potential URL length limitations and the security concerns mentioned earlier.**
 
