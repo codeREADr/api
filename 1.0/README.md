@@ -127,7 +127,7 @@ We recommend using the POST method to submit your API key securely. Variables ca
 curl -X POST \
      -H "Content-Type: application/x-www-form-urlencoded" \
      -d "api_key=YOUR_API_KEY&section=SECTION_VARIABLE&action=ACTION_VARIABLE" \
-     [https://api.codereadr.com/api/](https://api.codereadr.com/api/)
+     https://api.codereadr.com/api/
 ~~~
 
 ***Example using Python (with `requests` library):***
@@ -135,7 +135,7 @@ curl -X POST \
 ~~~ .py
 import requests
 
-url = "[https://api.codereadr.com/api/](https://api.codereadr.com/api/)"
+url = "https://api.codereadr.com/api/"
 data = {
     "api_key": "YOUR_API_KEY",
     "section": "SECTION_VARIABLE",
@@ -151,7 +151,7 @@ print(response.text)
 ~~~ .js
 const fetch = require('node-fetch');
 
-const url = "[https://api.codereadr.com/api/](https://api.codereadr.com/api/)";
+const url = "https://api.codereadr.com/api/";
 const data = new URLSearchParams();
 data.append('api_key', 'YOUR_API_KEY');
 data.append('section', 'SECTION_VARIABLE');
@@ -169,6 +169,29 @@ fetch(url, {
   .catch(error => console.error('Error:', error));
 ~~~
 
+***Example using PHP (with `cURL` library):***
+
+~~~ .php
+<?php
+$url = "https://api.codereadr.com/api/";
+$data = array(
+    "api_key" => "YOUR_API_KEY",
+    "section" => "SECTION_VARIABLE",
+    "action" => "ACTION_VARIABLE"
+);
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+
+echo $response;
+?>
+~~~
+
 ***Example using Java (with `java.net.http`):***
 
 ~~~ .java
@@ -182,7 +205,7 @@ import java.io.IOException;
 
 public class ApiRequest {
     public static void main(String[] args) throws IOException, InterruptedException {
-        String url = "[https://api.codereadr.com/api/](https://api.codereadr.com/api/)";
+        String url = "https://api.codereadr.com/api/";
         String apiKey = "YOUR_API_KEY";
         String section = "SECTION_VARIABLE";
         String action = "ACTION_VARIABLE";
@@ -241,7 +264,7 @@ Build an XML file to post to `https://api.codereadr.com/api/`. Only one file can
 curl -X POST \
      -H "Content-Type: application/xml" \
      -d "@your_file.xml" \
-     [https://api.codereadr.com/api/](https://api.codereadr.com/api/)
+     https://api.codereadr.com/api/
 ~~~
 
 <a name="postxmlstring"><a href="#head">Back to Top</a>
@@ -256,7 +279,7 @@ You can also build an XML string, assign it to the variable named `xml`, and eit
 curl -X POST \
      -H "Content-Type: application/x-www-form-urlencoded" \
      -d "xml=<xml><section>SECTION_VARIABLE</section><action>ACTION_VARIABLE</action><api_key>YOUR_API_KEY</api_key></xml>" \
-     [https://api.codereadr.com/api/](https://api.codereadr.com/api/)
+     https://api.codereadr.com/api/
 ~~~
 
 After the API receives the request, it responds with raw XML containing either a success status and requested information, or a failure status and an error description.
