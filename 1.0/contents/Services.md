@@ -123,6 +123,7 @@ If <b>validation_method</b> is set to <code>webview</code>:
 | auto_sync_up_delay | An integer value specifying the delay in seconds between attempts to upload scans to the server. Default delay is 2 seconds. Only for services with <code>auto_sync</code> enabled. |
 | auto_sync_down_url | Set to `0` to disable automatic downloading of database updates. Users will have to manual download database updates. If you need to re-enable set to `1`. Only for on-device database services with <code>auto_sync</code> enabled. Note: specifying your own cutom URL is not publicly supported at this time. |
 | auto_sync_down_delay | An integer value specifying the delay in seconds between checks to sync down new database updates from the server. Default delay is 120 seconds. Only for services with <code>auto_sync</code> enabled. |
+| decoder_config | A JSON string defining the barcode scanner configuration for the service. Configurations have many options, so rather than authoring the JSON by hand, define it in the website UI and copy the resulting value (see <a href="#decoder-config">Scanner Configuration</a> below). We validate only that the value is well-formed JSON and store it verbatim. To clear an existing configuration, submit an empty JSON object <code>{}</code>. |
 
 <h3>Response</h3>
 
@@ -191,6 +192,7 @@ Variables omitted when editing a service will not affect their correspondent ser
 | auto_sync_up_delay | An integer value specifying the delay in seconds between attempts to upload scans to the server. Default delay is 2 seconds. Only for services with <code>auto_sync</code> enabled. |
 | auto_sync_down_url | Set to `0` to disable automatic downloading of database updates. Users will have to manual download database updates. If you need to re-enable set to `1`. Only for on-device database services with <code>auto_sync</code> enabled. Note: specifying your own cutom URL is not publicly supported at this time. |
 | auto_sync_down_delay | An integer value specifying the delay in seconds between checks to sync down new database updates from the server. Default delay is 120 seconds. Only for services with <code>auto_sync</code> enabled. |
+| decoder_config | A JSON string defining the barcode scanner configuration for the service. Configurations have many options, so rather than authoring the JSON by hand, define it in the website UI and copy the resulting value (see <a href="#decoder-config">Scanner Configuration</a> below). We validate only that the value is well-formed JSON and store it verbatim. To clear an existing configuration, submit an empty JSON object <code>{}</code>. |
 
 <h3>Response</h3>
 
@@ -204,6 +206,22 @@ If your service is successfully edited after we receive these variables, we will
     <status>1</status>
 </xml>
 ~~~
+
+[Back to Top](#head)
+
+<a name="decoder-config"></a><h2>Scanner Configuration (decoder_config)</h2>
+
+The <code>decoder_config</code> variable (available on both <a href="#create">create</a> and <a href="#edit">update</a>) holds the service's barcode scanner configuration as a JSON string. A configuration can include many options, so the recommended way to produce a valid value is:
+
+1. In the website, open the service and define its barcode scanner configuration. See [Barcode Scanner Configurations](https://www.codereadr.com/knowledgebase/barcode-scanner-configurations/) in the knowledge base.
+2. Copy the configuration's JSON value and submit it as the <code>decoder_config</code> variable (as a standard POST parameter, like the other variables above).
+
+The API validates only that the value is well-formed JSON and stores it verbatim. To clear an existing configuration, submit an empty JSON object <code>{}</code>.
+
+Notes:
+
+* Setting a scanner configuration on the service **locks** it for that service. Without a service-level configuration, app users can set the scan mode and barcode formats from the app's Settings tab (unless the admin hides that tab); once <code>decoder_config</code> is set, those choices are fixed for the service.
+* A service's scanner configuration applies to its primary scan action and to its barcode-type questions, unless a barcode question defines its own configuration, which takes precedence for that question.
 
 [Back to Top](#head)
 
